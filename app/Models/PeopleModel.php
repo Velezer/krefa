@@ -4,7 +4,7 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class PersonModel extends Model
+class PeopleModel extends Model
 {
-    $table = 'person';
+    $table = 'people';
 }
