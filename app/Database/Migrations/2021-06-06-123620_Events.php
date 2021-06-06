@@ -8,9 +8,6 @@ class Events extends Migration
 {
 	public function up()
 	{
-	    $this->createDatabase('ci4');
-	    $this->createTable('krefa');
-	    
 		$this->forge->addField([
 		    'id'          => [
                 'type'           => 'INT',
@@ -27,6 +24,13 @@ class Events extends Migration
 		        'constraint'  => 255
 		      ]
 		  ]);
+		    
+		$this->forge->createDatabase('ci4', true);
+
+		$this->forge->addPrimaryKey('id');
+ 
+		$this->forge->createTable('krefa', true);
+	 
 	}
 
 	public function down()
