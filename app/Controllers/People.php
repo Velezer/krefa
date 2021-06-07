@@ -2,10 +2,10 @@
 
 namespace App\Controllers;
 
-class Data extends BaseController
+class People extends BaseController
 {
 	public function index()
 	{
-		return view('data/index');
+		return view('people/index');
 	}
 }

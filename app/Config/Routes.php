@@ -36,6 +36,8 @@ $routes->get('/', 'Home::index');
 
 $routes->resource('api/events', ['controller' => 'EventsApi']);
 $routes->presenter('admin/events', ['controller' => 'EventsApi']);
+$routes->resource('api/people', ['controller' => 'PeopleApi']);
+$routes->presenter('admin/people', ['controller' => 'PeopleApi']);
 
 /*
  * --------------------------------------------------------------------

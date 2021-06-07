@@ -6,5 +6,7 @@ use CodeIgniter\Model;
 
 class PeopleModel extends Model
 {
-    $table = 'people';
+    protected $table = 'people';
+    protected $primaryKey = 'id';
+    protected $allowedFields = ['name', 'address'];
 }

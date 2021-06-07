@@ -40,4 +40,14 @@ class Validation
 	//--------------------------------------------------------------------
 	// Rules
 	//--------------------------------------------------------------------
+
+    public $insertEvent = [
+	    'title' => 'required|min_lenght[4]',
+	    'speaker' => 'required|min_lenght[5]'
+	    ];
+	    
+	public $insertPerson = [
+	    'name' => 'required|min_lenght[5]',
+	    'address' => 'required|min_lenght[7]'
+	    ];
 }
