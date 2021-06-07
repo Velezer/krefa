@@ -15,11 +15,11 @@ class Events extends Migration
                 'unsigned'       => true,
                 'auto_increment' => true
         ],
-		    'judul' => [
+		    'title' => [
 		        'type'         => 'VARCHAR',
 		        'constraint'   => 255
 		    ],
-		    'pembicara' => [
+		    'speaker' => [
 		        'type'        => 'VARCHAR',
 		        'constraint'  => 255
 		      ]
@@ -29,7 +29,7 @@ class Events extends Migration
 
 		$this->forge->addPrimaryKey('id');
  
-		$this->forge->createTable('krefa', true);
+		$this->forge->createTable('events', true);
 	 
 	}
 
