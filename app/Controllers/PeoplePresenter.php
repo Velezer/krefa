@@ -2,9 +2,9 @@
 
 namespace App\Controllers;
 
-use CodeIgniter\RESTful\ResourceController;
+use CodeIgniter\RESTful\ResourcePresenter;
 
-class PeoplePresenter extends ResourceController
+class PeoplePresenter extends ResourcePresenter
 {
 	/**
 	 * Return an array of resource objects, themselves in array format
