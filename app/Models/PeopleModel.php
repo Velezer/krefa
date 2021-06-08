@@ -8,5 +8,5 @@ class PeopleModel extends Model
 {
     protected $table = 'people';
     protected $primaryKey = 'id';
-    protected $allowedFields = ['name', 'address'];
+    protected $allowedFields = ['nama', 'whatsapp', 'alamat'];
 }

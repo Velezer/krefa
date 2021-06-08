@@ -9,27 +9,28 @@ class People extends Migration
 	public function up()
 	{
 		$this->forge->addField([
-		    'id' => [
-		        'type' => 'INT',
-		        'constraint' => 11,
-		        'unsigned' => true,
-		        'auto_increment' => true
-		        ],
-		    'name' => [
-		        'type' => 'VARCHAR',
-		        'constraint' => 255
-		        ],
-		    'address' => [
-		        'type' => 'VARCHAR',
-		        'constraint' => 255
-		        ]
-		    ]);
-		
+			'id' => [
+				'type' => 'INT',
+				'constraint' => 11,
+				'unsigned' => true,
+				'auto_increment' => true
+			],
+			'nama' => [
+				'type' => 'VARCHAR',
+				'constraint' => 255
+			],
+			'whatsapp' => [
+				'type' => 'VARCHAR',
+				'constraint' => 16
+			],
+			'alamat' => [
+				'type' => 'TEXT',
+			]
+		]);
+
 		$this->forge->addPrimaryKey('id');
-		
+
 		$this->forge->createTable('people', true);
-	
-	    
 	}
 
 	public function down()

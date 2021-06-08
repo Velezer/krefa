@@ -23,7 +23,7 @@ class PeopleApi extends ResourceController
     {
         $data = $this->request->getPost();
         
-        $validate = $this->validation->run($data, 'insertEvent');
+        $validate = $this->validation->run($data, 'insertPeople');
         $errors = $this->validation->getErrors();
         
         if ($errors){
@@ -47,7 +47,7 @@ class PeopleApi extends ResourceController
         $data = $this->request->getRawInput();
         $data['id'] = $id;
         
-        $validate = $this->validation->run($data, 'insertEvent');
+        $validate = $this->validation->run($data, 'insertPeople');
         $errors = $this->validation->getErrors();
         
         if ($errors){
