@@ -8,7 +8,12 @@ class PeopleApi extends ResourceController
 {
     protected $modelName = 'App\Models\PeopleModel';
     protected $format    = 'json';
-
+    
+    
+    public function __construct(){
+        
+        $this->validation = \Config\Services::validation();
+    }
     public function index()
     {
         return $this->respond($this->model->findAll());
@@ -18,6 +23,12 @@ class PeopleApi extends ResourceController
     {
         $data = $this->request->getPost();
         
+        $validate = $this->validation->run($data, 'insertEvent');
+        $errors = $this->validation->getErrors();
+        
+        if ($errors){
+            return $this->fail($errors);
+        }
         
         if($this->model->insert($data))
         {
@@ -35,6 +46,13 @@ class PeopleApi extends ResourceController
         }
         $data = $this->request->getRawInput();
         $data['id'] = $id;
+        
+        $validate = $this->validation->run($data, 'insertEvent');
+        $errors = $this->validation->getErrors();
+        
+        if ($errors){
+            return $this->fail($errors);
+        }
         
         if($this->model->update($id, $data))
         {

@@ -29,6 +29,7 @@ class EventsApi extends ResourceController
         if ($errors){
             return $this->fail($errors);
         }
+        
         if($this->model->insert($data))
         {
             return $this->respondCreated($data, 'Data berhasil ditambahkan');
@@ -45,6 +46,13 @@ class EventsApi extends ResourceController
         }
         $data = $this->request->getRawInput();
         $data['id'] = $id;
+        
+        $validate = $this->validation->run($data, 'insertEvent');
+        $errors = $this->validation->getErrors();
+        
+        if ($errors){
+            return $this->fail($errors);
+        }
         
         if($this->model->update($id, $data))
         {
