@@ -1,0 +1,152 @@
+ERROR - 2021-06-06 07:12:48 --> Error connecting to the database: No such file or directory
+ERROR - 2021-06-06 07:22:30 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+ERROR - 2021-06-06 07:25:12 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+ERROR - 2021-06-06 07:26:08 --> Error connecting to the database: Access denied for user '****'@'localhost'
+ERROR - 2021-06-06 07:27:40 --> Error connecting to the database: Access denied for user '****'@'localhost'
+ERROR - 2021-06-06 07:52:03 --> Error connecting to the database: Access denied for user '****'@'localhost'
+ERROR - 2021-06-06 07:52:34 --> Error connecting to the database: Access denied for user '****'@'localhost'
+ERROR - 2021-06-06 07:57:30 --> Error connecting to the database: Access denied for user ''@'localhost' to database 'ci4'
+ERROR - 2021-06-06 07:58:29 --> Error connecting to the database: Access denied for user ''@'localhost' to database 'ci4'
+ERROR - 2021-06-06 08:03:14 --> Error connecting to the database: Unknown database 'ci4'
+ERROR - 2021-06-06 10:09:54 --> Can't create database 'ci4'; database exists
+ERROR - 2021-06-06 10:17:12 --> Can't create database 'ci45'; database exists
+ERROR - 2021-06-06 10:18:26 --> Incorrect table definition; there can be only one auto column and it must be defined as a key
+ERROR - 2021-06-06 10:22:33 --> Can't create database 'c8i45'; database exists
+ERROR - 2021-06-06 10:22:49 --> Incorrect table definition; there can be only one auto column and it must be defined as a key
+ERROR - 2021-06-06 10:30:51 --> Error connecting to the database: Connection refused
+ERROR - 2021-06-06 10:35:32 --> Can't create database 'c88i45'; database exists
+ERROR - 2021-06-06 10:38:23 --> Table 'krefa' already exists
+ERROR - 2021-06-06 10:39:34 --> Table 'krefa' already exists
+ERROR - 2021-06-06 10:39:44 --> Table 'krefa' already exists
+ERROR - 2021-06-06 10:41:16 --> Table 'krefa' already exists
+CRITICAL - 2021-06-06 19:51:00 --> Call to undefined method CodeIgniter\Router\RouteCollection::resources()
+#0 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(799): require()
+#1 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(392): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#2 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CLI/Console.php(61): CodeIgniter\CodeIgniter->run()
+#4 /storage/CA60-3068/Android/data/com.termux/files/krefa/spark(64): CodeIgniter\CLI\Console->run()
+#5 {main}
+CRITICAL - 2021-06-06 19:54:24 --> syntax error, unexpected variable "$table", expecting "function" or "const"
+#0 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(282): CodeIgniter\Autoloader\Autoloader->includeFile('/storage/CA60-3...')
+#1 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(247): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Even...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Even...')
+#3 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/RESTful/BaseResource.php(64): class_exists('App\\Models\\Even...')
+#4 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/RESTful/BaseResource.php(43): CodeIgniter\RESTful\BaseResource->setModel('App\\Models\\Even...')
+#5 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(904): CodeIgniter\RESTful\BaseResource->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#6 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(429): CodeIgniter\CodeIgniter->createController()
+#7 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /storage/CA60-3068/Android/data/com.termux/files/krefa/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#9 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/storage/CA60-3...')
+#10 {main}
+CRITICAL - 2021-06-06 19:55:51 --> syntax error, unexpected variable "$table", expecting "function" or "const"
+#0 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(282): CodeIgniter\Autoloader\Autoloader->includeFile('/storage/CA60-3...')
+#1 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(247): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Even...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Even...')
+#3 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/RESTful/BaseResource.php(64): class_exists('App\\Models\\Even...')
+#4 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/RESTful/BaseResource.php(43): CodeIgniter\RESTful\BaseResource->setModel('App\\Models\\Even...')
+#5 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(904): CodeIgniter\RESTful\BaseResource->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#6 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(429): CodeIgniter\CodeIgniter->createController()
+#7 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /storage/CA60-3068/Android/data/com.termux/files/krefa/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#9 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/storage/CA60-3...')
+#10 {main}
+CRITICAL - 2021-06-06 19:55:54 --> syntax error, unexpected variable "$table", expecting "function" or "const"
+#0 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(282): CodeIgniter\Autoloader\Autoloader->includeFile('/storage/CA60-3...')
+#1 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(247): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Even...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Even...')
+#3 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/RESTful/BaseResource.php(64): class_exists('App\\Models\\Even...')
+#4 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/RESTful/BaseResource.php(43): CodeIgniter\RESTful\BaseResource->setModel('App\\Models\\Even...')
+#5 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(904): CodeIgniter\RESTful\BaseResource->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#6 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(429): CodeIgniter\CodeIgniter->createController()
+#7 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /storage/CA60-3068/Android/data/com.termux/files/krefa/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#9 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/storage/CA60-3...')
+#10 {main}
+CRITICAL - 2021-06-06 19:56:16 --> syntax error, unexpected variable "$table", expecting "function" or "const"
+#0 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(282): CodeIgniter\Autoloader\Autoloader->includeFile('/storage/CA60-3...')
+#1 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(247): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Even...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Even...')
+#3 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/RESTful/BaseResource.php(64): class_exists('App\\Models\\Even...')
+#4 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/RESTful/BaseResource.php(43): CodeIgniter\RESTful\BaseResource->setModel('App\\Models\\Even...')
+#5 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(904): CodeIgniter\RESTful\BaseResource->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#6 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(429): CodeIgniter\CodeIgniter->createController()
+#7 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /storage/CA60-3068/Android/data/com.termux/files/krefa/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#9 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/storage/CA60-3...')
+#10 {main}
+CRITICAL - 2021-06-06 20:01:16 --> syntax error, unexpected variable "$table", expecting "function" or "const"
+#0 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(282): CodeIgniter\Autoloader\Autoloader->includeFile('/storage/CA60-3...')
+#1 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(247): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Even...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Even...')
+#3 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/RESTful/BaseResource.php(64): class_exists('App\\Models\\Even...')
+#4 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/RESTful/BaseResource.php(43): CodeIgniter\RESTful\BaseResource->setModel('App\\Models\\Even...')
+#5 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(904): CodeIgniter\RESTful\BaseResource->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#6 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(429): CodeIgniter\CodeIgniter->createController()
+#7 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /storage/CA60-3068/Android/data/com.termux/files/krefa/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#9 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/storage/CA60-3...')
+#10 {main}
+CRITICAL - 2021-06-06 20:08:48 --> syntax error, unexpected variable "$primaryKey", expecting "function" or "const"
+#0 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(282): CodeIgniter\Autoloader\Autoloader->includeFile('/storage/CA60-3...')
+#1 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(247): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Even...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Even...')
+#3 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/RESTful/BaseResource.php(64): class_exists('App\\Models\\Even...')
+#4 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/RESTful/BaseResource.php(43): CodeIgniter\RESTful\BaseResource->setModel('App\\Models\\Even...')
+#5 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(904): CodeIgniter\RESTful\BaseResource->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#6 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(429): CodeIgniter\CodeIgniter->createController()
+#7 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /storage/CA60-3068/Android/data/com.termux/files/krefa/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#9 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/storage/CA60-3...')
+#10 {main}
+CRITICAL - 2021-06-06 20:09:18 --> syntax error, unexpected variable "$primaryKey", expecting "function" or "const"
+#0 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(282): CodeIgniter\Autoloader\Autoloader->includeFile('/storage/CA60-3...')
+#1 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(247): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Even...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Even...')
+#3 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/RESTful/BaseResource.php(64): class_exists('App\\Models\\Even...')
+#4 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/RESTful/BaseResource.php(43): CodeIgniter\RESTful\BaseResource->setModel('App\\Models\\Even...')
+#5 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(904): CodeIgniter\RESTful\BaseResource->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#6 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(429): CodeIgniter\CodeIgniter->createController()
+#7 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /storage/CA60-3068/Android/data/com.termux/files/krefa/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#9 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/storage/CA60-3...')
+#10 {main}
+CRITICAL - 2021-06-06 20:28:12 --> syntax error, unexpected token "}"
+#0 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(282): CodeIgniter\Autoloader\Autoloader->includeFile('/storage/CA60-3...')
+#1 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(247): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(888): class_exists('\\App\\Controller...', true)
+#4 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(424): CodeIgniter\CodeIgniter->startController()
+#5 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /storage/CA60-3068/Android/data/com.termux/files/krefa/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#7 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/storage/CA60-3...')
+#8 {main}
+CRITICAL - 2021-06-06 20:28:26 --> syntax error, unexpected token "}"
+#0 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(282): CodeIgniter\Autoloader\Autoloader->includeFile('/storage/CA60-3...')
+#1 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(247): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(888): class_exists('\\App\\Controller...', true)
+#4 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(424): CodeIgniter\CodeIgniter->startController()
+#5 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /storage/CA60-3068/Android/data/com.termux/files/krefa/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#7 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/storage/CA60-3...')
+#8 {main}
+CRITICAL - 2021-06-06 20:28:36 --> syntax error, unexpected token "}"
+#0 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(282): CodeIgniter\Autoloader\Autoloader->includeFile('/storage/CA60-3...')
+#1 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(247): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(888): class_exists('\\App\\Controller...', true)
+#4 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(424): CodeIgniter\CodeIgniter->startController()
+#5 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /storage/CA60-3068/Android/data/com.termux/files/krefa/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#7 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/storage/CA60-3...')
+#8 {main}
+CRITICAL - 2021-06-06 20:28:44 --> syntax error, unexpected token "}"
+#0 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(282): CodeIgniter\Autoloader\Autoloader->includeFile('/storage/CA60-3...')
+#1 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(247): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(888): class_exists('\\App\\Controller...', true)
+#4 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(424): CodeIgniter\CodeIgniter->startController()
+#5 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /storage/CA60-3068/Android/data/com.termux/files/krefa/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#7 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/storage/CA60-3...')
+#8 {main}

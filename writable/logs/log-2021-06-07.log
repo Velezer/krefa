@@ -1,0 +1,472 @@
+CRITICAL - 2021-06-07 03:27:11 --> Declaration of App\Controllers\EventsApi::update($id) must be compatible with CodeIgniter\RESTful\ResourceController::update($id = null)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-06-07 03:30:32 --> There is no data to update.
+#0 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/BaseModel.php(896): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/Model.php(718): CodeIgniter\BaseModel->update(Array, Array)
+#2 /storage/CA60-3068/Android/data/com.termux/files/krefa/app/Controllers/EventsApi.php(34): CodeIgniter\Model->update('1', Array)
+#3 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\EventsApi->update('1')
+#4 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EventsApi))
+#5 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /storage/CA60-3068/Android/data/com.termux/files/krefa/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#7 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/storage/CA60-3...')
+#8 {main}
+CRITICAL - 2021-06-07 03:32:10 --> There is no data to update.
+#0 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/BaseModel.php(896): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/Model.php(718): CodeIgniter\BaseModel->update(Array, Array)
+#2 /storage/CA60-3068/Android/data/com.termux/files/krefa/app/Controllers/EventsApi.php(34): CodeIgniter\Model->update('3', Array)
+#3 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\EventsApi->update('3')
+#4 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EventsApi))
+#5 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /storage/CA60-3068/Android/data/com.termux/files/krefa/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#7 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/storage/CA60-3...')
+#8 {main}
+CRITICAL - 2021-06-07 03:33:17 --> There is no data to update.
+#0 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/BaseModel.php(896): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/Model.php(718): CodeIgniter\BaseModel->update(Array, Array)
+#2 /storage/CA60-3068/Android/data/com.termux/files/krefa/app/Controllers/EventsApi.php(34): CodeIgniter\Model->update('3', Array)
+#3 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\EventsApi->update('3')
+#4 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EventsApi))
+#5 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /storage/CA60-3068/Android/data/com.termux/files/krefa/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#7 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/storage/CA60-3...')
+#8 {main}
+CRITICAL - 2021-06-07 03:35:00 --> There is no data to update.
+#0 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/BaseModel.php(896): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/Model.php(718): CodeIgniter\BaseModel->update(Array, Array)
+#2 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/BaseModel.php(683): CodeIgniter\Model->update('3', Array)
+#3 /storage/CA60-3068/Android/data/com.termux/files/krefa/app/Controllers/EventsApi.php(34): CodeIgniter\BaseModel->save(Array)
+#4 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\EventsApi->update('3')
+#5 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EventsApi))
+#6 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /storage/CA60-3068/Android/data/com.termux/files/krefa/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#8 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/storage/CA60-3...')
+#9 {main}
+CRITICAL - 2021-06-07 03:35:34 --> There is no data to update.
+#0 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/BaseModel.php(896): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/Model.php(718): CodeIgniter\BaseModel->update(Array, Array)
+#2 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/BaseModel.php(683): CodeIgniter\Model->update('3', Array)
+#3 /storage/CA60-3068/Android/data/com.termux/files/krefa/app/Controllers/EventsApi.php(34): CodeIgniter\BaseModel->save(Array)
+#4 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\EventsApi->update('3')
+#5 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EventsApi))
+#6 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /storage/CA60-3068/Android/data/com.termux/files/krefa/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#8 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/storage/CA60-3...')
+#9 {main}
+CRITICAL - 2021-06-07 03:35:44 --> There is no data to insert.
+#0 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/BaseModel.php(751): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+#1 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/Model.php(686): CodeIgniter\BaseModel->insert(Array, false)
+#2 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/BaseModel.php(687): CodeIgniter\Model->insert(Array, false)
+#3 /storage/CA60-3068/Android/data/com.termux/files/krefa/app/Controllers/EventsApi.php(34): CodeIgniter\BaseModel->save(Array)
+#4 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\EventsApi->update('')
+#5 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EventsApi))
+#6 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /storage/CA60-3068/Android/data/com.termux/files/krefa/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#8 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/storage/CA60-3...')
+#9 {main}
+CRITICAL - 2021-06-07 03:35:50 --> There is no data to insert.
+#0 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/BaseModel.php(751): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+#1 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/Model.php(686): CodeIgniter\BaseModel->insert(Array, false)
+#2 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/BaseModel.php(687): CodeIgniter\Model->insert(Array, false)
+#3 /storage/CA60-3068/Android/data/com.termux/files/krefa/app/Controllers/EventsApi.php(34): CodeIgniter\BaseModel->save(Array)
+#4 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\EventsApi->update('')
+#5 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EventsApi))
+#6 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /storage/CA60-3068/Android/data/com.termux/files/krefa/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#8 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/storage/CA60-3...')
+#9 {main}
+CRITICAL - 2021-06-07 03:36:50 --> There is no data to update.
+#0 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/BaseModel.php(896): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/Model.php(718): CodeIgniter\BaseModel->update(Array, Array)
+#2 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/BaseModel.php(683): CodeIgniter\Model->update('3', Array)
+#3 /storage/CA60-3068/Android/data/com.termux/files/krefa/app/Controllers/EventsApi.php(34): CodeIgniter\BaseModel->save(Array)
+#4 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\EventsApi->update('3', '')
+#5 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EventsApi))
+#6 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /storage/CA60-3068/Android/data/com.termux/files/krefa/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#8 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/storage/CA60-3...')
+#9 {main}
+CRITICAL - 2021-06-07 03:36:59 --> There is no data to update.
+#0 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/BaseModel.php(896): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/Model.php(718): CodeIgniter\BaseModel->update(Array, Array)
+#2 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/BaseModel.php(683): CodeIgniter\Model->update('3', Array)
+#3 /storage/CA60-3068/Android/data/com.termux/files/krefa/app/Controllers/EventsApi.php(34): CodeIgniter\BaseModel->save(Array)
+#4 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\EventsApi->update('3')
+#5 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EventsApi))
+#6 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /storage/CA60-3068/Android/data/com.termux/files/krefa/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#8 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/storage/CA60-3...')
+#9 {main}
+CRITICAL - 2021-06-07 03:39:40 --> There is no data to update.
+#0 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/BaseModel.php(896): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/Model.php(718): CodeIgniter\BaseModel->update(Array, Array)
+#2 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/BaseModel.php(683): CodeIgniter\Model->update('3', Array)
+#3 /storage/CA60-3068/Android/data/com.termux/files/krefa/app/Controllers/EventsApi.php(34): CodeIgniter\BaseModel->save(Array)
+#4 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\EventsApi->update('3')
+#5 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EventsApi))
+#6 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /storage/CA60-3068/Android/data/com.termux/files/krefa/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#8 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/storage/CA60-3...')
+#9 {main}
+CRITICAL - 2021-06-07 03:39:52 --> There is no data to update.
+#0 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/BaseModel.php(896): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/Model.php(718): CodeIgniter\BaseModel->update(Array, Array)
+#2 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/BaseModel.php(683): CodeIgniter\Model->update('3', Array)
+#3 /storage/CA60-3068/Android/data/com.termux/files/krefa/app/Controllers/EventsApi.php(34): CodeIgniter\BaseModel->save(Array)
+#4 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\EventsApi->update('3')
+#5 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EventsApi))
+#6 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /storage/CA60-3068/Android/data/com.termux/files/krefa/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#8 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/storage/CA60-3...')
+#9 {main}
+CRITICAL - 2021-06-07 03:40:58 --> There is no data to update.
+#0 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/BaseModel.php(896): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/Model.php(718): CodeIgniter\BaseModel->update(Array, Array)
+#2 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/BaseModel.php(683): CodeIgniter\Model->update('3', Array)
+#3 /storage/CA60-3068/Android/data/com.termux/files/krefa/app/Controllers/EventsApi.php(34): CodeIgniter\BaseModel->save(Array)
+#4 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\EventsApi->update('3')
+#5 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EventsApi))
+#6 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /storage/CA60-3068/Android/data/com.termux/files/krefa/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#8 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/storage/CA60-3...')
+#9 {main}
+CRITICAL - 2021-06-07 03:57:06 --> There is no data to update.
+#0 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/BaseModel.php(896): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/Model.php(718): CodeIgniter\BaseModel->update(Array, Array)
+#2 /storage/CA60-3068/Android/data/com.termux/files/krefa/app/Controllers/EventsApi.php(34): CodeIgniter\Model->update('3', Array)
+#3 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\EventsApi->update('3')
+#4 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EventsApi))
+#5 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /storage/CA60-3068/Android/data/com.termux/files/krefa/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#7 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/storage/CA60-3...')
+#8 {main}
+CRITICAL - 2021-06-07 03:57:18 --> There is no data to update.
+#0 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/BaseModel.php(896): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/Model.php(718): CodeIgniter\BaseModel->update(Array, Array)
+#2 /storage/CA60-3068/Android/data/com.termux/files/krefa/app/Controllers/EventsApi.php(34): CodeIgniter\Model->update('3', Array)
+#3 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\EventsApi->update('3')
+#4 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EventsApi))
+#5 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /storage/CA60-3068/Android/data/com.termux/files/krefa/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#7 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/storage/CA60-3...')
+#8 {main}
+CRITICAL - 2021-06-07 03:59:49 --> Array to string conversion
+#0 /storage/CA60-3068/Android/data/com.termux/files/krefa/app/Controllers/EventsApi.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string...', '/storage/CA60-3...', 34)
+#1 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\EventsApi->update('3')
+#2 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EventsApi))
+#3 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /storage/CA60-3068/Android/data/com.termux/files/krefa/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#5 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/storage/CA60-3...')
+#6 {main}
+CRITICAL - 2021-06-07 04:00:15 --> Array to string conversion
+#0 /storage/CA60-3068/Android/data/com.termux/files/krefa/app/Controllers/EventsApi.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string...', '/storage/CA60-3...', 34)
+#1 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\EventsApi->update('3')
+#2 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EventsApi))
+#3 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /storage/CA60-3068/Android/data/com.termux/files/krefa/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#5 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/storage/CA60-3...')
+#6 {main}
+CRITICAL - 2021-06-07 04:02:39 --> There is no data to update.
+#0 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/BaseModel.php(896): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/Model.php(718): CodeIgniter\BaseModel->update(Array, Array)
+#2 /storage/CA60-3068/Android/data/com.termux/files/krefa/app/Controllers/EventsApi.php(35): CodeIgniter\Model->update('3', Array)
+#3 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\EventsApi->update('3')
+#4 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EventsApi))
+#5 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /storage/CA60-3068/Android/data/com.termux/files/krefa/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#7 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/storage/CA60-3...')
+#8 {main}
+CRITICAL - 2021-06-07 04:03:27 --> There is no data to update.
+#0 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/BaseModel.php(896): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/Model.php(718): CodeIgniter\BaseModel->update(Array, Array)
+#2 /storage/CA60-3068/Android/data/com.termux/files/krefa/app/Controllers/EventsApi.php(35): CodeIgniter\Model->update('3', Array)
+#3 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\EventsApi->update('3')
+#4 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EventsApi))
+#5 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /storage/CA60-3068/Android/data/com.termux/files/krefa/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#7 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/storage/CA60-3...')
+#8 {main}
+CRITICAL - 2021-06-07 04:08:18 --> There is no data to insert.
+#0 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/BaseModel.php(1668): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+#1 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/BaseModel.php(735): CodeIgniter\BaseModel->transformDataToArray(Array, 'insert')
+#2 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/Model.php(686): CodeIgniter\BaseModel->insert(Array, true)
+#3 /storage/CA60-3068/Android/data/com.termux/files/krefa/app/Controllers/EventsApi.php(22): CodeIgniter\Model->insert(Array)
+#4 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\EventsApi->create()
+#5 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EventsApi))
+#6 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /storage/CA60-3068/Android/data/com.termux/files/krefa/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#8 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/storage/CA60-3...')
+#9 {main}
+CRITICAL - 2021-06-07 04:40:22 --> There is no data to update.
+#0 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/BaseModel.php(896): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/Model.php(718): CodeIgniter\BaseModel->update(Array, Array)
+#2 /storage/CA60-3068/Android/data/com.termux/files/krefa/app/Controllers/EventsApi.php(35): CodeIgniter\Model->update('1', Array)
+#3 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\EventsApi->update('1')
+#4 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EventsApi))
+#5 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /storage/CA60-3068/Android/data/com.termux/files/krefa/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#7 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/storage/CA60-3...')
+#8 {main}
+CRITICAL - 2021-06-07 04:40:45 --> There is no data to update.
+#0 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/BaseModel.php(896): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/Model.php(718): CodeIgniter\BaseModel->update(Array, Array)
+#2 /storage/CA60-3068/Android/data/com.termux/files/krefa/app/Controllers/EventsApi.php(35): CodeIgniter\Model->update('1', Array)
+#3 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\EventsApi->update('1')
+#4 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EventsApi))
+#5 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /storage/CA60-3068/Android/data/com.termux/files/krefa/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#7 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/storage/CA60-3...')
+#8 {main}
+CRITICAL - 2021-06-07 04:41:17 --> Call to undefined function App\Controllers\respondUpdated()
+#0 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\EventsApi->update('1')
+#1 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EventsApi))
+#2 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /storage/CA60-3068/Android/data/com.termux/files/krefa/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#4 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/storage/CA60-3...')
+#5 {main}
+CRITICAL - 2021-06-07 04:41:52 --> Call to undefined function App\Controllers\respond()
+#0 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\EventsApi->update('1')
+#1 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EventsApi))
+#2 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /storage/CA60-3068/Android/data/com.termux/files/krefa/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#4 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/storage/CA60-3...')
+#5 {main}
+CRITICAL - 2021-06-07 04:42:03 --> Call to undefined function App\Controllers\respond()
+#0 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\EventsApi->update('1')
+#1 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EventsApi))
+#2 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /storage/CA60-3068/Android/data/com.termux/files/krefa/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#4 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/storage/CA60-3...')
+#5 {main}
+CRITICAL - 2021-06-07 04:42:29 --> Call to undefined function App\Controllers\respond()
+#0 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\EventsApi->update('1')
+#1 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EventsApi))
+#2 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /storage/CA60-3068/Android/data/com.termux/files/krefa/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#4 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/storage/CA60-3...')
+#5 {main}
+CRITICAL - 2021-06-07 04:42:42 --> Call to undefined function App\Controllers\respondCreated()
+#0 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\EventsApi->update('1')
+#1 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EventsApi))
+#2 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /storage/CA60-3068/Android/data/com.termux/files/krefa/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#4 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/storage/CA60-3...')
+#5 {main}
+CRITICAL - 2021-06-07 04:42:44 --> Call to undefined function App\Controllers\respondCreated()
+#0 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\EventsApi->update('1')
+#1 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EventsApi))
+#2 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /storage/CA60-3068/Android/data/com.termux/files/krefa/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#4 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/storage/CA60-3...')
+#5 {main}
+CRITICAL - 2021-06-07 04:45:46 --> Call to undefined function App\Controllers\respondCreated()
+#0 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\EventsApi->update('1')
+#1 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EventsApi))
+#2 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /storage/CA60-3068/Android/data/com.termux/files/krefa/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#4 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/storage/CA60-3...')
+#5 {main}
+CRITICAL - 2021-06-07 04:52:39 --> Call to undefined function App\Controllers\respond()
+#0 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\EventsApi->update('1')
+#1 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EventsApi))
+#2 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /storage/CA60-3068/Android/data/com.termux/files/krefa/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#4 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/storage/CA60-3...')
+#5 {main}
+CRITICAL - 2021-06-07 04:56:07 --> There is no data to update.
+#0 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/BaseModel.php(896): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/Model.php(718): CodeIgniter\BaseModel->update(Array, Array)
+#2 /storage/CA60-3068/Android/data/com.termux/files/krefa/app/Controllers/EventsApi.php(35): CodeIgniter\Model->update('1', Array)
+#3 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\EventsApi->update('1')
+#4 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EventsApi))
+#5 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /storage/CA60-3068/Android/data/com.termux/files/krefa/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#7 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/storage/CA60-3...')
+#8 {main}
+CRITICAL - 2021-06-07 04:56:11 --> There is no data to update.
+#0 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/BaseModel.php(896): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/Model.php(718): CodeIgniter\BaseModel->update(Array, Array)
+#2 /storage/CA60-3068/Android/data/com.termux/files/krefa/app/Controllers/EventsApi.php(35): CodeIgniter\Model->update('1', Array)
+#3 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\EventsApi->update('1')
+#4 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EventsApi))
+#5 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /storage/CA60-3068/Android/data/com.termux/files/krefa/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#7 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/storage/CA60-3...')
+#8 {main}
+CRITICAL - 2021-06-07 04:56:51 --> There is no data to update.
+#0 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/BaseModel.php(896): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/Model.php(718): CodeIgniter\BaseModel->update(Array, Array)
+#2 /storage/CA60-3068/Android/data/com.termux/files/krefa/app/Controllers/EventsApi.php(35): CodeIgniter\Model->update('1', Array)
+#3 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\EventsApi->update('1')
+#4 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EventsApi))
+#5 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /storage/CA60-3068/Android/data/com.termux/files/krefa/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#7 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/storage/CA60-3...')
+#8 {main}
+CRITICAL - 2021-06-07 05:19:16 --> Declaration of App\Controllers\EventsApi::delete($id) must be compatible with CodeIgniter\RESTful\ResourceController::delete($id = null)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-06-07 05:24:39 --> syntax error, unexpected token ")", expecting identifier or variable or "{" or "$"
+#0 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(282): CodeIgniter\Autoloader\Autoloader->includeFile('/storage/CA60-3...')
+#1 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(247): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(888): class_exists('\\App\\Controller...', true)
+#4 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(424): CodeIgniter\CodeIgniter->startController()
+#5 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /storage/CA60-3068/Android/data/com.termux/files/krefa/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#7 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/storage/CA60-3...')
+#8 {main}
+CRITICAL - 2021-06-07 05:24:44 --> syntax error, unexpected token ")", expecting identifier or variable or "{" or "$"
+#0 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(282): CodeIgniter\Autoloader\Autoloader->includeFile('/storage/CA60-3...')
+#1 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(247): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(888): class_exists('\\App\\Controller...', true)
+#4 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(424): CodeIgniter\CodeIgniter->startController()
+#5 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /storage/CA60-3068/Android/data/com.termux/files/krefa/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#7 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/storage/CA60-3...')
+#8 {main}
+CRITICAL - 2021-06-07 05:24:55 --> Declaration of App\Controllers\EventsApi::show($id) must be compatible with CodeIgniter\RESTful\ResourceController::show($id = null)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-06-07 05:57:06 --> syntax error, unexpected token "}", expecting "("
+#0 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(282): CodeIgniter\Autoloader\Autoloader->includeFile('/storage/CA60-3...')
+#1 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(247): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(888): class_exists('\\App\\Controller...', true)
+#4 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(424): CodeIgniter\CodeIgniter->startController()
+#5 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /storage/CA60-3068/Android/data/com.termux/files/krefa/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#7 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/storage/CA60-3...')
+#8 {main}
+CRITICAL - 2021-06-07 05:57:33 --> syntax error, unexpected token "}", expecting ";"
+#0 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(282): CodeIgniter\Autoloader\Autoloader->includeFile('/storage/CA60-3...')
+#1 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(247): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(888): class_exists('\\App\\Controller...', true)
+#4 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(424): CodeIgniter\CodeIgniter->startController()
+#5 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /storage/CA60-3068/Android/data/com.termux/files/krefa/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#7 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/storage/CA60-3...')
+#8 {main}
+CRITICAL - 2021-06-07 05:57:48 --> syntax error, unexpected token "}", expecting ";"
+#0 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(282): CodeIgniter\Autoloader\Autoloader->includeFile('/storage/CA60-3...')
+#1 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(247): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(888): class_exists('\\App\\Controller...', true)
+#4 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(424): CodeIgniter\CodeIgniter->startController()
+#5 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /storage/CA60-3068/Android/data/com.termux/files/krefa/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#7 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/storage/CA60-3...')
+#8 {main}
+CRITICAL - 2021-06-07 05:58:06 --> Undefined constant "App\Controllers\this"
+#0 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\EventsApi->delete('10')
+#1 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EventsApi))
+#2 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /storage/CA60-3068/Android/data/com.termux/files/krefa/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#4 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/storage/CA60-3...')
+#5 {main}
+CRITICAL - 2021-06-07 08:28:41 --> syntax error, unexpected variable "$table", expecting "function" or "const"
+#0 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(282): CodeIgniter\Autoloader\Autoloader->includeFile('/storage/CA60-3...')
+#1 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(247): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Peop...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Peop...')
+#3 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/RESTful/BaseResource.php(64): class_exists('App\\Models\\Peop...')
+#4 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/RESTful/BaseResource.php(43): CodeIgniter\RESTful\BaseResource->setModel('App\\Models\\Peop...')
+#5 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(904): CodeIgniter\RESTful\BaseResource->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#6 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(429): CodeIgniter\CodeIgniter->createController()
+#7 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /storage/CA60-3068/Android/data/com.termux/files/krefa/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#9 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/storage/CA60-3...')
+#10 {main}
+CRITICAL - 2021-06-07 08:28:50 --> syntax error, unexpected variable "$table", expecting "function" or "const"
+#0 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(282): CodeIgniter\Autoloader\Autoloader->includeFile('/storage/CA60-3...')
+#1 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(247): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Peop...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Peop...')
+#3 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/RESTful/BaseResource.php(64): class_exists('App\\Models\\Peop...')
+#4 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/RESTful/BaseResource.php(43): CodeIgniter\RESTful\BaseResource->setModel('App\\Models\\Peop...')
+#5 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(904): CodeIgniter\RESTful\BaseResource->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#6 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(429): CodeIgniter\CodeIgniter->createController()
+#7 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /storage/CA60-3068/Android/data/com.termux/files/krefa/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#9 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/storage/CA60-3...')
+#10 {main}
+CRITICAL - 2021-06-07 09:41:31 --> Constant expression contains invalid operations
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-06-07 09:43:21 --> syntax error, unexpected token "->", expecting "," or ";"
+#0 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(282): CodeIgniter\Autoloader\Autoloader->includeFile('/storage/CA60-3...')
+#1 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(247): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(888): class_exists('\\App\\Controller...', true)
+#4 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(424): CodeIgniter\CodeIgniter->startController()
+#5 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /storage/CA60-3068/Android/data/com.termux/files/krefa/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#7 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/storage/CA60-3...')
+#8 {main}
+CRITICAL - 2021-06-07 09:43:55 --> Constant expression contains invalid operations
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-06-07 09:43:58 --> Constant expression contains invalid operations
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-06-07 09:44:02 --> Constant expression contains invalid operations
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-06-07 09:51:32 --> syntax error, unexpected token "=", expecting variable
+#0 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(282): CodeIgniter\Autoloader\Autoloader->includeFile('/storage/CA60-3...')
+#1 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(247): CodeIgniter\Autoloader\Autoloader->loadInNamespace('Config\\Validati...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('Config\\Validati...')
+#3 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/Config/Factories.php(149): class_exists('Config\\Validati...')
+#4 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/Config/Factories.php(115): CodeIgniter\Config\Factories::locateClass(Array, 'Validation')
+#5 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/Common.php(228): CodeIgniter\Config\Factories::__callStatic('config', Array)
+#6 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/Config/Services.php(841): config('Validation')
+#7 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/Config/BaseService.php(263): CodeIgniter\Config\Services::validation(NULL, false)
+#8 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/Config/BaseService.php(192): CodeIgniter\Config\BaseService::__callStatic('validation', Array)
+#9 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/Config/Services.php(838): CodeIgniter\Config\BaseService::getSharedInstance('validation', NULL)
+#10 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/Config/BaseService.php(263): CodeIgniter\Config\Services::validation()
+#11 /storage/CA60-3068/Android/data/com.termux/files/krefa/app/Controllers/EventsApi.php(15): CodeIgniter\Config\BaseService::__callStatic('validation', Array)
+#12 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(903): App\Controllers\EventsApi->__construct()
+#13 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(429): CodeIgniter\CodeIgniter->createController()
+#14 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#15 /storage/CA60-3068/Android/data/com.termux/files/krefa/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#16 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/storage/CA60-3...')
+#17 {main}
+CRITICAL - 2021-06-07 09:52:17 --> Undefined variable $validation
+#0 /storage/CA60-3068/Android/data/com.termux/files/krefa/app/Controllers/EventsApi.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', '/storage/CA60-3...', 26)
+#1 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\EventsApi->create()
+#2 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EventsApi))
+#3 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /storage/CA60-3068/Android/data/com.termux/files/krefa/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#5 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/storage/CA60-3...')
+#6 {main}
+ERROR - 2021-06-07 18:12:53 --> Error connecting to the database: Connection refused
+CRITICAL - 2021-06-07 18:12:53 --> Unable to connect to the database.
+Main connection [MySQLi]: Connection refused
+#0 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/Database/BaseConnection.php(625): CodeIgniter\Database\BaseConnection->initialize()
+#1 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1881): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/Model.php(197): CodeIgniter\Database\BaseBuilder->get()
+#3 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/BaseModel.php(603): CodeIgniter\Model->doFindAll(0, 0)
+#4 /storage/CA60-3068/Android/data/com.termux/files/krefa/app/Controllers/Eventsapi.php(19): CodeIgniter\BaseModel->findAll()
+#5 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\EventsApi->index()
+#6 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EventsApi))
+#7 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /storage/CA60-3068/Android/data/com.termux/files/krefa/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#9 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/storage/CA60-3...')
+#10 {main}
+CRITICAL - 2021-06-07 22:19:18 --> Call to a member function findAll() on null
+#0 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\EventsPresenter->index()
+#1 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EventsPresenter))
+#2 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /storage/CA60-3068/Android/data/com.termux/files/krefa/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#4 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/storage/CA60-3...')
+#5 {main}
+CRITICAL - 2021-06-07 22:19:43 --> Invalid file: templates/list.php
+#0 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('templates/list....')
+#1 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/Common.php(1250): CodeIgniter\View\View->render('templates/list', Array, true)
+#2 /storage/CA60-3068/Android/data/com.termux/files/krefa/app/Controllers/EventsPresenter.php(14): view('templates/list', Array)
+#3 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\EventsPresenter->index()
+#4 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EventsPresenter))
+#5 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /storage/CA60-3068/Android/data/com.termux/files/krefa/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#7 /storage/CA60-3068/Android/data/com.termux/files/krefa/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/storage/CA60-3...')
+#8 {main}
