@@ -3,6 +3,9 @@
 namespace App\Controllers;
 
 use App\Controllers\BaseController;
+use PhpParser\Node\Expr\Throw_;
+
+use function PHPUnit\Framework\throwException;
 
 class Preparation extends BaseController
 {
@@ -11,7 +14,7 @@ class Preparation extends BaseController
 		try {
 			shell_exec('php ../spark db:create ci4');
 			echo 'Sukses membuat database ci4 <br>';
-			
+
 			shell_exec('php ../spark migrate:refresh');
 			echo 'Sukses migrate database <br>';
 
@@ -21,7 +24,7 @@ class Preparation extends BaseController
 			echo 'Sukses mengisi database pakai seeder sebanyak 3 rows';
 		} catch (\Throwable $th) {
 			echo '<br>ERROR GAN!!!<br>';
-			echo $th;
+			throw new \Exception($th);
 		}
 	}
 }
