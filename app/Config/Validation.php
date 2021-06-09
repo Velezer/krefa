@@ -52,7 +52,7 @@ class Validation
 
 	public $insertPeople = [
 		'nama' => 'required',
-		'whatsapp' => 'required',
+		'whatsapp' => 'required|max_length[16]|min_length[9]',
 		'alamat' => 'required'
 	];
 }

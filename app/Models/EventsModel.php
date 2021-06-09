@@ -8,5 +8,5 @@ class EventsModel extends Model
 {
     protected $table = 'events';
     protected $primaryKey = 'id';
-    protected $allowedFields = ['title', 'speaker'];
+    protected $allowedFields = ['tema', 'judul', 'pembicara','level', 'konsep', 'tempat', 'keterangan_tambahan'];
 }

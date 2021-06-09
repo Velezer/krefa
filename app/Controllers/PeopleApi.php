@@ -16,7 +16,13 @@ class PeopleApi extends ResourceController
     }
     public function index()
     {
-        return $this->respond($this->model->findAll());
+        $data = $this->model->findAll();
+        if($data){
+            $respond['data'] = $data;
+            $respond['status'] = 'success';
+            return $this->respond($respond);
+        }
+        return $this->failNotFound();
     }
 
     public function create()
@@ -32,7 +38,10 @@ class PeopleApi extends ResourceController
         
         if($this->model->insert($data))
         {
-            return $this->respondCreated($data, 'Data berhasil ditambahkan');
+            $respond['data'] = $data;
+            $respond['status'] = 'success';
+            $respond['message'] = 'Data berhasil ditambahkan';
+            return $this->respondCreated($respond, $respond['message']);
         }
         
         
@@ -56,27 +65,37 @@ class PeopleApi extends ResourceController
         
         if($this->model->update($id, $data))
         {
-            return $this->respondUpdated($data, 'Data berhasil diubah');
+            $respond['data'] = $data;
+            $respond['status'] = 'success';
+            $respond['message'] = 'Data berhasil diubah';
+            return $this->respondUpdated($respond, $respond['message']);
         }
     }
     
     public function delete($id = null)
     {
-        if(!$this->model->find($id))
+        $data = $this->model->find($id);
+        if(!$data) //tidak ditemukan
         {
             return $this->failNotFound('id '.$id.' tidak ditemukan');
         }
         
         if($this->model->delete($id))
         {
-            return $this->respondDeleted(['id' => $id, 'message' => 'id '.$id.' berhasil dihapus']);
+            $respond['data'] = $data;
+            $respond['status'] = 'success';
+            $respond['message'] = 'Data berhasil dihapus';
+            return $this->respondDeleted([$respond, $respond['message']]);
         }
     }
     
     public function show($id = null){
         $data = $this->model->find($id);
         if($data){
-            return $this->respond($data);
+            
+            $respond['data'] = $data;
+            $respond['status'] = 'success';
+            return $this->respond($respond);
         }
         return $this->failNotFound('id '.$id.' tidak ditemukan');
     }

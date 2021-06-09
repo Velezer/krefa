@@ -4,10 +4,11 @@ namespace App\Database\Migrations;
 
 use CodeIgniter\Database\Migration;
 
-class Events extends Migration
+class EventsTable extends Migration
 {
 	public function up()
 	{
+
 		$this->forge->addField([
 			'id'          => [
 				'type'           => 'INT',
@@ -47,16 +48,12 @@ class Events extends Migration
 
 
 		$this->forge->addPrimaryKey('id');
-
 		$this->forge->createTable('events', true);
+
 	}
 
 	public function down()
 	{
-		// if ($this->forge->dropDatabase('ci4'))
-		// {
-		// 	echo 'Database deleted!';
-		// }
-
+		$this->forge->dropTable('events', true);
 	}
 }
