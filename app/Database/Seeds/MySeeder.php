@@ -10,17 +10,18 @@ class MySeeder extends Seeder
 	{
 		$dataEvents = [
 		'tema' => 'Iman',
-		'judul' => 'Finding The Light',
-		'pembicara' => 'Ust. Aaz',
+		'judul' => 'From Darkness',
+		'pembicara' => static::faker()->title .' '. static::faker()->name,
 		'level' => 'berat',
 		'konsep' => 'biasa',
-		'tempat' => 'SSC'
+		'tempat' => static::faker()->company,
+		'keterangan_tambahan' => static::faker()->text
 		];
 
 		$dataPeople = [
-			'nama' => 'arief',
-			'whatsapp' => '6273671238',
-			'alamat' => 'Kudus'
+			'nama' => static::faker()->name,
+			'whatsapp' => static::faker()->phoneNumber,
+			'alamat' => static::faker()->address
 		];
 
 		$this->db->table('events')->insert($dataEvents);
