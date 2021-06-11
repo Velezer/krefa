@@ -16,6 +16,11 @@ class PeopleTable extends Migration
 				'unsigned' => true,
 				'auto_increment' => true
 			],
+			'foto' => [
+				'type' => 'VARCHAR',
+				'constraint' => 255,
+				'null' => true
+			],
 			'nama' => [
 				'type' => 'VARCHAR',
 				'constraint' => 255
@@ -31,7 +36,6 @@ class PeopleTable extends Migration
 
 		$this->forge->addPrimaryKey('id');
 		$this->forge->createTable('people', true);
-
 	}
 
 	public function down()

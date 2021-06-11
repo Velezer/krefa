@@ -43,6 +43,9 @@ class EventsTable extends Migration
 			'keterangan_tambahan' => [
 				'type' => 'TEXT',
 				'null' => true
+			],
+			'tanggal' => [
+				'type' => 'DATE'
 			]
 		]);
 

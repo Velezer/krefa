@@ -15,10 +15,12 @@ class MySeeder extends Seeder
 		'level' => 'berat',
 		'konsep' => 'biasa',
 		'tempat' => static::faker()->company,
-		'keterangan_tambahan' => static::faker()->text
+		'keterangan_tambahan' => static::faker()->text,
+		'tanggal' => static::faker()->date()
 		];
 
 		$dataPeople = [
+			'foto' => static::faker()->imageUrl(),
 			'nama' => static::faker()->name,
 			'whatsapp' => static::faker()->phoneNumber,
 			'alamat' => static::faker()->address
