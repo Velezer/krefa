@@ -17,12 +17,8 @@ class PeopleApi extends ResourceController
     public function index()
     {
         $data = $this->model->findAll();
-
-        if($data == []){
-            return $this->fail('Data kosong!');
-        }
         
-        if($data){
+        if($data || $data == []){
             $respond['data'] = $data;
             $respond['status'] = 'success';
             return $this->respond($respond);
