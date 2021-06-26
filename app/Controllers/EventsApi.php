@@ -45,18 +45,19 @@ class EventsApi extends ResourceController
     
     public function update($id = null)
     {
+        // Check id
         if(!$this->model->find($id))
         {
             return $this->failNotFound('id '.$id.' tidak ditemukan');
         }
-        
+        // Validation
         $this->validate('insertEvent');
         $errors = $this->validator->getErrors();
         
         if ($errors){
             return $this->failValidationErrors($errors);
         }
-        
+        // Data
         $data = $this->request->getRawInput();
         $data['id'] = $id;
         if($this->model->update($id, $data))
