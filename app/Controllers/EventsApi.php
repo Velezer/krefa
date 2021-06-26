@@ -6,7 +6,7 @@ use CodeIgniter\RESTful\ResourceController;
 
 class EventsApi extends ResourceController
 {
-    protected $modelName = 'App\Models\PeopleModel';
+    protected $modelName = 'App\Models\EventsModel';
     protected $format    = 'json';
     
 
@@ -24,12 +24,10 @@ class EventsApi extends ResourceController
 
     public function create()
     {
-        $this->validate('insertEvent');
-        $errors = $this->validator->getErrors();
-        
-        if ($errors){
-            return $this->failValidationErrors($errors);
+        if (!$this->validate('insertEvent')){
+            return $this->failValidationErrors($this->validator->getErrors());
         }
+
         
         $data = $this->request->getPost();
         if($this->model->insert($data))
@@ -51,11 +49,8 @@ class EventsApi extends ResourceController
             return $this->failNotFound('id '.$id.' tidak ditemukan');
         }
         // Validation
-        $this->validate('insertEvent');
-        $errors = $this->validator->getErrors();
-        
-        if ($errors){
-            return $this->failValidationErrors($errors);
+        if (!$this->validate('insertEvent')){
+            return $this->failValidationErrors($this->validator->getErrors());
         }
         // Data
         $data = $this->request->getRawInput();
