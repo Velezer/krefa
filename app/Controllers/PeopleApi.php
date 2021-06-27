@@ -62,7 +62,7 @@ class PeopleApi extends ResourceController
         if (!$this->model->find($id)) {
             return $this->failNotFound('id ' . $id . ' tidak ditemukan');
         }
-
+        
         $data = $this->model->find($id);
         if ($this->model->delete($id)) {
             $respond['data'] = $data;
