@@ -6,11 +6,11 @@ class Presensi extends BaseController
 {
 	public function index()
 	{
-		return view('presensi/index');
+		return view('presensi/find');
 	}
 	
-	public function input()
+	public function register()
 	{
-		return view('presensi/input');
+		return view('presensi/register');
 	}
 }
