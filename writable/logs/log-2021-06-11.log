@@ -1,0 +1,66 @@
+ERROR - 2021-06-11 22:31:14 --> Can't create database 'ci4'; database exists
+ERROR - 2021-06-11 23:39:17 --> Error connecting to the database: No connection could be made because the target machine actively refused it
+ERROR - 2021-06-11 23:39:20 --> Error connecting to the database: No connection could be made because the target machine actively refused it
+ERROR - 2021-06-11 23:39:22 --> Error connecting to the database: No connection could be made because the target machine actively refused it
+ERROR - 2021-06-11 23:39:25 --> Error connecting to the database: No connection could be made because the target machine actively refused it
+CRITICAL - 2021-06-11 23:39:25 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+#0 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Database\Database.php(87): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Database\Config.php(117): CodeIgniter\Database\Database->loadForge(Object(CodeIgniter\Database\MySQLi\Connection))
+#2 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Database\Seeder.php(101): CodeIgniter\Database\Config::forge(NULL)
+#3 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Commands\Database\Seed.php(73): CodeIgniter\Database\Seeder->__construct(Object(Config\Database))
+#4 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CLI\Commands.php(67): CodeIgniter\Commands\Database\Seed->run(Array)
+#5 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CLI\CommandRunner.php(71): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#6 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CLI\CommandRunner.php(56): CodeIgniter\CLI\CommandRunner->index(Array)
+#7 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(927): CodeIgniter\CLI\CommandRunner->_remap('index', 'db:seed', 'MySeeder')
+#8 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(CodeIgniter\CLI\CommandRunner))
+#9 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CLI\Console.php(61): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\Ace\Desktop\krefa\spark(64): CodeIgniter\CLI\Console->run()
+#12 {main}
+ERROR - 2021-06-11 23:39:28 --> Error connecting to the database: No connection could be made because the target machine actively refused it
+CRITICAL - 2021-06-11 23:39:28 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+#0 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Database\Database.php(87): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Database\Config.php(117): CodeIgniter\Database\Database->loadForge(Object(CodeIgniter\Database\MySQLi\Connection))
+#2 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Database\Seeder.php(101): CodeIgniter\Database\Config::forge(NULL)
+#3 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Commands\Database\Seed.php(73): CodeIgniter\Database\Seeder->__construct(Object(Config\Database))
+#4 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CLI\Commands.php(67): CodeIgniter\Commands\Database\Seed->run(Array)
+#5 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CLI\CommandRunner.php(71): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#6 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CLI\CommandRunner.php(56): CodeIgniter\CLI\CommandRunner->index(Array)
+#7 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(927): CodeIgniter\CLI\CommandRunner->_remap('index', 'db:seed', 'MySeeder')
+#8 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(CodeIgniter\CLI\CommandRunner))
+#9 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CLI\Console.php(61): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\Ace\Desktop\krefa\spark(64): CodeIgniter\CLI\Console->run()
+#12 {main}
+ERROR - 2021-06-11 23:39:31 --> Error connecting to the database: No connection could be made because the target machine actively refused it
+CRITICAL - 2021-06-11 23:39:31 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+#0 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Database\Database.php(87): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Database\Config.php(117): CodeIgniter\Database\Database->loadForge(Object(CodeIgniter\Database\MySQLi\Connection))
+#2 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Database\Seeder.php(101): CodeIgniter\Database\Config::forge(NULL)
+#3 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Commands\Database\Seed.php(73): CodeIgniter\Database\Seeder->__construct(Object(Config\Database))
+#4 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CLI\Commands.php(67): CodeIgniter\Commands\Database\Seed->run(Array)
+#5 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CLI\CommandRunner.php(71): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#6 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CLI\CommandRunner.php(56): CodeIgniter\CLI\CommandRunner->index(Array)
+#7 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(927): CodeIgniter\CLI\CommandRunner->_remap('index', 'db:seed', 'MySeeder')
+#8 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(CodeIgniter\CLI\CommandRunner))
+#9 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CLI\Console.php(61): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\Ace\Desktop\krefa\spark(64): CodeIgniter\CLI\Console->run()
+#12 {main}
+ERROR - 2021-06-11 23:39:34 --> Error connecting to the database: No connection could be made because the target machine actively refused it
+CRITICAL - 2021-06-11 23:39:34 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+#0 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(625): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1881): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Model.php(197): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\BaseModel.php(603): CodeIgniter\Model->doFindAll(0, 0)
+#4 C:\Users\Ace\Desktop\krefa\app\Controllers\EventsApi.php(19): CodeIgniter\BaseModel->findAll()
+#5 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\EventsApi->index()
+#6 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EventsApi))
+#7 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\Ace\Desktop\krefa\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\Users\\Ace\\De...')
+#10 {main}

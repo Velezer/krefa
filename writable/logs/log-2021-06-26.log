@@ -1,0 +1,715 @@
+ERROR - 2021-06-26 06:01:00 --> Error connecting to the database: Class "SQLite3" not found
+ERROR - 2021-06-26 06:01:54 --> Error connecting to the database: No connection could be made because the target machine actively refused it
+CRITICAL - 2021-06-26 06:01:54 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+#0 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(625): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1881): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Model.php(197): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\BaseModel.php(603): CodeIgniter\Model->doFindAll(0, 0)
+#4 C:\Users\Ace\Desktop\krefa\app\Controllers\PeopleApi.php(19): CodeIgniter\BaseModel->findAll()
+#5 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\PeopleApi->index()
+#6 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeopleApi))
+#7 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\Ace\Desktop\krefa\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\Users\\Ace\\De...')
+#10 {main}
+ERROR - 2021-06-26 06:05:59 --> Error connecting to the database: No connection could be made because the target machine actively refused it
+CRITICAL - 2021-06-26 06:05:59 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+#0 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(625): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1881): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Model.php(197): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\BaseModel.php(603): CodeIgniter\Model->doFindAll(0, 0)
+#4 C:\Users\Ace\Desktop\krefa\app\Controllers\PeopleApi.php(19): CodeIgniter\BaseModel->findAll()
+#5 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\PeopleApi->index()
+#6 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeopleApi))
+#7 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\Ace\Desktop\krefa\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\Users\\Ace\\De...')
+#10 {main}
+ERROR - 2021-06-26 06:06:35 --> Error connecting to the database: No connection could be made because the target machine actively refused it
+CRITICAL - 2021-06-26 06:06:35 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+#0 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(625): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1881): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Model.php(197): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\BaseModel.php(603): CodeIgniter\Model->doFindAll(0, 0)
+#4 C:\Users\Ace\Desktop\krefa\app\Controllers\PeopleApi.php(19): CodeIgniter\BaseModel->findAll()
+#5 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\PeopleApi->index()
+#6 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeopleApi))
+#7 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\Ace\Desktop\krefa\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\Users\\Ace\\De...')
+#10 {main}
+CRITICAL - 2021-06-26 06:09:25 --> Class "CodeIgniter\Database\SQLite\Connection" not found
+#0 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Database\Database.php(69): CodeIgniter\Database\Database->initDriver('SQLite', 'CodeIgniter\\Dat...', Array)
+#1 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Database\Config.php(86): CodeIgniter\Database\Database->load(Array, 'default')
+#2 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Model.php(104): CodeIgniter\Database\Config::connect('default')
+#3 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Config\Factories.php(120): CodeIgniter\Model->__construct(NULL)
+#4 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Common.php(883): CodeIgniter\Config\Factories::__callStatic('models', Array)
+#5 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\RESTful\BaseResource.php(66): model('App\\Models\\Peop...')
+#6 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\RESTful\BaseResource.php(43): CodeIgniter\RESTful\BaseResource->setModel('App\\Models\\Peop...')
+#7 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(904): CodeIgniter\RESTful\BaseResource->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#8 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(429): CodeIgniter\CodeIgniter->createController()
+#9 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\Ace\Desktop\krefa\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\Users\\Ace\\De...')
+#12 {main}
+CRITICAL - 2021-06-26 06:09:27 --> Class "CodeIgniter\Database\SQLite\Connection" not found
+#0 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Database\Database.php(69): CodeIgniter\Database\Database->initDriver('SQLite', 'CodeIgniter\\Dat...', Array)
+#1 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Database\Config.php(86): CodeIgniter\Database\Database->load(Array, 'default')
+#2 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Model.php(104): CodeIgniter\Database\Config::connect('default')
+#3 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Config\Factories.php(120): CodeIgniter\Model->__construct(NULL)
+#4 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Common.php(883): CodeIgniter\Config\Factories::__callStatic('models', Array)
+#5 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\RESTful\BaseResource.php(66): model('App\\Models\\Peop...')
+#6 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\RESTful\BaseResource.php(43): CodeIgniter\RESTful\BaseResource->setModel('App\\Models\\Peop...')
+#7 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(904): CodeIgniter\RESTful\BaseResource->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#8 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(429): CodeIgniter\CodeIgniter->createController()
+#9 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\Ace\Desktop\krefa\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\Users\\Ace\\De...')
+#12 {main}
+CRITICAL - 2021-06-26 06:09:31 --> Class "CodeIgniter\Database\SQLite\Connection" not found
+#0 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Database\Database.php(69): CodeIgniter\Database\Database->initDriver('SQLite', 'CodeIgniter\\Dat...', Array)
+#1 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Database\Config.php(86): CodeIgniter\Database\Database->load(Array, 'default')
+#2 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Model.php(104): CodeIgniter\Database\Config::connect('default')
+#3 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Config\Factories.php(120): CodeIgniter\Model->__construct(NULL)
+#4 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Common.php(883): CodeIgniter\Config\Factories::__callStatic('models', Array)
+#5 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\RESTful\BaseResource.php(66): model('App\\Models\\Peop...')
+#6 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\RESTful\BaseResource.php(43): CodeIgniter\RESTful\BaseResource->setModel('App\\Models\\Peop...')
+#7 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(904): CodeIgniter\RESTful\BaseResource->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#8 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(429): CodeIgniter\CodeIgniter->createController()
+#9 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\Ace\Desktop\krefa\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\Users\\Ace\\De...')
+#12 {main}
+ERROR - 2021-06-26 06:10:00 --> Error connecting to the database: Class "SQLite3" not found
+CRITICAL - 2021-06-26 06:10:00 --> Unable to connect to the database.
+Main connection [SQLite3]: Class "SQLite3" not found
+#0 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(625): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1881): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Model.php(197): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\BaseModel.php(603): CodeIgniter\Model->doFindAll(0, 0)
+#4 C:\Users\Ace\Desktop\krefa\app\Controllers\PeopleApi.php(19): CodeIgniter\BaseModel->findAll()
+#5 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\PeopleApi->index()
+#6 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeopleApi))
+#7 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\Ace\Desktop\krefa\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\Users\\Ace\\De...')
+#10 {main}
+ERROR - 2021-06-26 06:10:08 --> Error connecting to the database: Class "SQLite3" not found
+CRITICAL - 2021-06-26 06:10:08 --> Unable to connect to the database.
+Main connection [SQLite3]: Class "SQLite3" not found
+#0 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(625): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1881): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Model.php(197): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\BaseModel.php(603): CodeIgniter\Model->doFindAll(0, 0)
+#4 C:\Users\Ace\Desktop\krefa\app\Controllers\PeopleApi.php(19): CodeIgniter\BaseModel->findAll()
+#5 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\PeopleApi->index()
+#6 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeopleApi))
+#7 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\Ace\Desktop\krefa\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\Users\\Ace\\De...')
+#10 {main}
+ERROR - 2021-06-26 06:11:38 --> Error connecting to the database: Class "SQLite3" not found
+CRITICAL - 2021-06-26 06:12:09 --> Class "CodeIgniter\Database\SQLite\Connection" not found
+#0 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Database\Database.php(69): CodeIgniter\Database\Database->initDriver('SQLite', 'CodeIgniter\\Dat...', Array)
+#1 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Database\Config.php(86): CodeIgniter\Database\Database->load(Array, 'default')
+#2 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Common.php(370): CodeIgniter\Database\Config::connect('default', true)
+#3 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(150): db_connect(NULL)
+#4 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Config\Services.php(465): CodeIgniter\Database\MigrationRunner->__construct(NULL, NULL)
+#5 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Config\BaseService.php(263): CodeIgniter\Config\Services::migrations(Object(Config\Migrations), NULL, false)
+#6 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Config\BaseService.php(192): CodeIgniter\Config\BaseService::__callStatic('migrations', Array)
+#7 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Config\Services.php(460): CodeIgniter\Config\BaseService::getSharedInstance('migrations', NULL, NULL)
+#8 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Config\BaseService.php(263): CodeIgniter\Config\Services::migrations()
+#9 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Commands\Database\Migrate.php(73): CodeIgniter\Config\BaseService::__callStatic('migrations', Array)
+#10 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CLI\Commands.php(67): CodeIgniter\Commands\Database\Migrate->run(Array)
+#11 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CLI\CommandRunner.php(71): CodeIgniter\CLI\Commands->run('migrate', Array)
+#12 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CLI\CommandRunner.php(56): CodeIgniter\CLI\CommandRunner->index(Array)
+#13 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(927): CodeIgniter\CLI\CommandRunner->_remap('index', 'migrate')
+#14 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(CodeIgniter\CLI\CommandRunner))
+#15 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#16 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CLI\Console.php(61): CodeIgniter\CodeIgniter->run()
+#17 C:\Users\Ace\Desktop\krefa\spark(64): CodeIgniter\CLI\Console->run()
+#18 {main}
+ERROR - 2021-06-26 06:12:37 --> Error connecting to the database: No connection could be made because the target machine actively refused it
+ERROR - 2021-06-26 06:12:56 --> Error connecting to the database: Class "SQLite3" not found
+ERROR - 2021-06-26 06:13:06 --> Error connecting to the database: Class "SQLite3" not found
+ERROR - 2021-06-26 06:16:24 --> Error connecting to the database: Class "SQLite3" not found
+ERROR - 2021-06-26 06:20:20 --> Error connecting to the database: Class "SQLite3" not found
+CRITICAL - 2021-06-26 06:20:20 --> Unable to connect to the database.
+Main connection [SQLite3]: Class "SQLite3" not found
+#0 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(625): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1881): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Model.php(197): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\BaseModel.php(603): CodeIgniter\Model->doFindAll(0, 0)
+#4 C:\Users\Ace\Desktop\krefa\app\Controllers\PeopleApi.php(19): CodeIgniter\BaseModel->findAll()
+#5 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\PeopleApi->index()
+#6 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeopleApi))
+#7 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\Ace\Desktop\krefa\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\Users\\Ace\\De...')
+#10 {main}
+ERROR - 2021-06-26 06:20:51 --> Error connecting to the database: Class "SQLite3" not found
+CRITICAL - 2021-06-26 06:20:51 --> Unable to connect to the database.
+Main connection [SQLite3]: Class "SQLite3" not found
+#0 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(625): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1881): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Model.php(197): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\BaseModel.php(603): CodeIgniter\Model->doFindAll(0, 0)
+#4 C:\Users\Ace\Desktop\krefa\app\Controllers\PeopleApi.php(19): CodeIgniter\BaseModel->findAll()
+#5 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\PeopleApi->index()
+#6 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeopleApi))
+#7 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\Ace\Desktop\krefa\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\Users\\Ace\\De...')
+#10 {main}
+ERROR - 2021-06-26 06:22:18 --> Error connecting to the database: Class "SQLite3" not found
+CRITICAL - 2021-06-26 06:22:18 --> Unable to connect to the database.
+Main connection [SQLite3]: Class "SQLite3" not found
+#0 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(625): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1881): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Model.php(197): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\BaseModel.php(603): CodeIgniter\Model->doFindAll(0, 0)
+#4 C:\Users\Ace\Desktop\krefa\app\Controllers\PeopleApi.php(19): CodeIgniter\BaseModel->findAll()
+#5 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\PeopleApi->index()
+#6 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeopleApi))
+#7 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\Ace\Desktop\krefa\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\Users\\Ace\\De...')
+#10 {main}
+ERROR - 2021-06-26 06:35:25 --> Error connecting to the database: Class "SQLite3" not found
+CRITICAL - 2021-06-26 06:35:25 --> Unable to connect to the database.
+Main connection [SQLite3]: Class "SQLite3" not found
+#0 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(625): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1881): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Model.php(197): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\BaseModel.php(603): CodeIgniter\Model->doFindAll(0, 0)
+#4 C:\Users\Ace\Desktop\krefa\app\Controllers\PeopleApi.php(19): CodeIgniter\BaseModel->findAll()
+#5 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\PeopleApi->index()
+#6 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeopleApi))
+#7 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\Ace\Desktop\krefa\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\Users\\Ace\\De...')
+#10 {main}
+ERROR - 2021-06-26 06:35:53 --> Error connecting to the database: Class "SQLite3" not found
+CRITICAL - 2021-06-26 06:35:53 --> Unable to connect to the database.
+Main connection [SQLite3]: Class "SQLite3" not found
+#0 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(625): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1881): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Model.php(197): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\BaseModel.php(603): CodeIgniter\Model->doFindAll(0, 0)
+#4 C:\Users\Ace\Desktop\krefa\app\Controllers\PeopleApi.php(19): CodeIgniter\BaseModel->findAll()
+#5 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\PeopleApi->index()
+#6 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeopleApi))
+#7 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\Ace\Desktop\krefa\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\Users\\Ace\\De...')
+#10 {main}
+ERROR - 2021-06-26 06:36:03 --> Error connecting to the database: Class "SQLite3" not found
+ERROR - 2021-06-26 06:39:37 --> Error connecting to the database: Class "SQLite3" not found
+ERROR - 2021-06-26 06:41:29 --> Error connecting to the database: Class "SQLite3" not found
+ERROR - 2021-06-26 06:41:38 --> Error connecting to the database: Class "SQLite3" not found
+CRITICAL - 2021-06-26 06:41:38 --> Unable to connect to the database.
+Main connection [SQLite3]: Class "SQLite3" not found
+#0 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(625): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1881): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Model.php(197): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\BaseModel.php(603): CodeIgniter\Model->doFindAll(0, 0)
+#4 C:\Users\Ace\Desktop\krefa\app\Controllers\PeopleApi.php(19): CodeIgniter\BaseModel->findAll()
+#5 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\PeopleApi->index()
+#6 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeopleApi))
+#7 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\Ace\Desktop\krefa\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\Users\\Ace\\De...')
+#10 {main}
+ERROR - 2021-06-26 07:19:48 --> Error connecting to the database: Class "SQLite3" not found
+CRITICAL - 2021-06-26 07:19:48 --> Unable to connect to the database.
+Main connection [SQLite3]: Class "SQLite3" not found
+#0 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(625): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1881): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Model.php(197): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\BaseModel.php(603): CodeIgniter\Model->doFindAll(0, 0)
+#4 C:\Users\Ace\Desktop\krefa\app\Controllers\PeopleApi.php(19): CodeIgniter\BaseModel->findAll()
+#5 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\PeopleApi->index()
+#6 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeopleApi))
+#7 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\Ace\Desktop\krefa\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\Users\\Ace\\De...')
+#10 {main}
+ERROR - 2021-06-26 07:24:38 --> Error connecting to the database: Class "SQLite3" not found
+CRITICAL - 2021-06-26 07:24:38 --> Unable to connect to the database.
+Main connection [SQLite3]: Class "SQLite3" not found
+#0 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(625): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1881): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Model.php(197): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\BaseModel.php(603): CodeIgniter\Model->doFindAll(0, 0)
+#4 C:\Users\Ace\Desktop\krefa\app\Controllers\PeopleApi.php(19): CodeIgniter\BaseModel->findAll()
+#5 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\PeopleApi->index()
+#6 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeopleApi))
+#7 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\Ace\Desktop\krefa\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\Users\\Ace\\De...')
+#10 {main}
+ERROR - 2021-06-26 07:25:17 --> Table 'ci4.people' doesn't exist
+CRITICAL - 2021-06-26 07:25:17 --> Table 'ci4.people' doesn't exist
+#0 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(329): mysqli->query('SELECT *\nFROM `...')
+#1 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1881): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Model.php(197): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\BaseModel.php(603): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\Ace\Desktop\krefa\app\Controllers\PeopleApi.php(19): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\PeopleApi->index()
+#8 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeopleApi))
+#9 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\Ace\Desktop\krefa\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\Users\\Ace\\De...')
+#12 {main}
+CRITICAL - 2021-06-26 07:29:47 --> syntax error, unexpected token "if"
+#0 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(282): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\Ace\\De...')
+#1 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(247): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(888): class_exists('\\App\\Controller...', true)
+#4 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(424): CodeIgniter\CodeIgniter->startController()
+#5 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\Ace\Desktop\krefa\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\Users\\Ace\\De...')
+#8 {main}
+CRITICAL - 2021-06-26 07:30:22 --> Call to undefined function App\Controllers\boolean()
+#0 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\PeopleApi->index()
+#1 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeopleApi))
+#2 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\Ace\Desktop\krefa\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\Users\\Ace\\De...')
+#5 {main}
+CRITICAL - 2021-06-26 07:30:51 --> Call to undefined function App\Controllers\boolean()
+#0 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\PeopleApi->index()
+#1 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeopleApi))
+#2 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\Ace\Desktop\krefa\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\Users\\Ace\\De...')
+#5 {main}
+CRITICAL - 2021-06-26 07:32:03 --> Call to undefined function App\Controllers\boolean()
+#0 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\PeopleApi->index()
+#1 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeopleApi))
+#2 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\Ace\Desktop\krefa\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\Users\\Ace\\De...')
+#5 {main}
+CRITICAL - 2021-06-26 07:52:53 --> Call to a member function getErrors() on null
+#0 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\PeopleApi->create()
+#1 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeopleApi))
+#2 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\Ace\Desktop\krefa\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\Users\\Ace\\De...')
+#5 {main}
+CRITICAL - 2021-06-26 07:52:59 --> Call to a member function getErrors() on null
+#0 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\PeopleApi->create()
+#1 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeopleApi))
+#2 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\Ace\Desktop\krefa\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\Users\\Ace\\De...')
+#5 {main}
+CRITICAL - 2021-06-26 07:53:34 --> Call to a member function getError() on null
+#0 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\PeopleApi->create()
+#1 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeopleApi))
+#2 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\Ace\Desktop\krefa\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\Users\\Ace\\De...')
+#5 {main}
+CRITICAL - 2021-06-26 07:56:18 --> Call to a member function run() on null
+#0 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\PeopleApi->create()
+#1 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeopleApi))
+#2 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\Ace\Desktop\krefa\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\Users\\Ace\\De...')
+#5 {main}
+CRITICAL - 2021-06-26 07:56:33 --> Call to a member function run() on null
+#0 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\PeopleApi->create()
+#1 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeopleApi))
+#2 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\Ace\Desktop\krefa\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\Users\\Ace\\De...')
+#5 {main}
+CRITICAL - 2021-06-26 07:57:38 --> Call to a member function run() on null
+#0 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\PeopleApi->create()
+#1 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeopleApi))
+#2 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\Ace\Desktop\krefa\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\Users\\Ace\\De...')
+#5 {main}
+CRITICAL - 2021-06-26 08:06:57 --> Call to a member function run() on null
+#0 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\PeopleApi->create()
+#1 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeopleApi))
+#2 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\Ace\Desktop\krefa\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\Users\\Ace\\De...')
+#5 {main}
+CRITICAL - 2021-06-26 08:16:07 --> There is no data to insert.
+#0 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\BaseModel.php(1668): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+#1 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\BaseModel.php(735): CodeIgniter\BaseModel->transformDataToArray(Array, 'insert')
+#2 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Model.php(686): CodeIgniter\BaseModel->insert(Array, true)
+#3 C:\Users\Ace\Desktop\krefa\app\Controllers\PeopleApi.php(34): CodeIgniter\Model->insert(Array)
+#4 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\PeopleApi->create()
+#5 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeopleApi))
+#6 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\Ace\Desktop\krefa\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\Users\\Ace\\De...')
+#9 {main}
+CRITICAL - 2021-06-26 08:18:58 --> There is no data to insert.
+#0 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\BaseModel.php(1668): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+#1 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\BaseModel.php(735): CodeIgniter\BaseModel->transformDataToArray(Array, 'insert')
+#2 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Model.php(686): CodeIgniter\BaseModel->insert(Array, true)
+#3 C:\Users\Ace\Desktop\krefa\app\Controllers\PeopleApi.php(38): CodeIgniter\Model->insert(Array)
+#4 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\PeopleApi->create()
+#5 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeopleApi))
+#6 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\Ace\Desktop\krefa\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\Users\\Ace\\De...')
+#9 {main}
+ERROR - 2021-06-26 08:36:03 --> Error connecting to the database: Class "SQLite3" not found
+ERROR - 2021-06-26 08:43:38 --> Error connecting to the database: Class "SQLite3" not found
+ERROR - 2021-06-26 08:46:41 --> ErrorException: SQLite3::query(): Unable to prepare statement: 1, no such table: people in C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Database\SQLite3\Connection.php:148
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'SQLite3::query(...', 'C:\\Users\\Ace\\De...', 148)
+#1 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Database\SQLite3\Connection.php(148): SQLite3->query('SELECT *\nFROM `...')
+#2 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(732): CodeIgniter\Database\SQLite3\Connection->execute('SELECT *\nFROM `...')
+#3 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#4 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1881): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#5 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Model.php(197): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\BaseModel.php(603): CodeIgniter\Model->doFindAll(0, 0)
+#7 C:\Users\Ace\Desktop\krefa\app\Controllers\PeopleApi.php(16): CodeIgniter\BaseModel->findAll()
+#8 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\PeopleApi->index()
+#9 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeopleApi))
+#10 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\Ace\Desktop\krefa\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\Users\\Ace\\De...')
+#13 {main}
+CRITICAL - 2021-06-26 08:46:41 --> SQLite3::query(): Unable to prepare statement: 1, no such table: people
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'SQLite3::query(...', 'C:\\Users\\Ace\\De...', 148)
+#1 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Database\SQLite3\Connection.php(148): SQLite3->query('SELECT *\nFROM `...')
+#2 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(732): CodeIgniter\Database\SQLite3\Connection->execute('SELECT *\nFROM `...')
+#3 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#4 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1881): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#5 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Model.php(197): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\BaseModel.php(603): CodeIgniter\Model->doFindAll(0, 0)
+#7 C:\Users\Ace\Desktop\krefa\app\Controllers\PeopleApi.php(16): CodeIgniter\BaseModel->findAll()
+#8 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\PeopleApi->index()
+#9 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeopleApi))
+#10 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\Ace\Desktop\krefa\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\Users\\Ace\\De...')
+#13 {main}
+ERROR - 2021-06-26 08:47:31 --> ErrorException: SQLite3::query(): Unable to prepare statement: 1, no such table: people in C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Database\SQLite3\Connection.php:148
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'SQLite3::query(...', 'C:\\Users\\Ace\\De...', 148)
+#1 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Database\SQLite3\Connection.php(148): SQLite3->query('SELECT *\nFROM `...')
+#2 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(732): CodeIgniter\Database\SQLite3\Connection->execute('SELECT *\nFROM `...')
+#3 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#4 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1881): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#5 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Model.php(197): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\BaseModel.php(603): CodeIgniter\Model->doFindAll(0, 0)
+#7 C:\Users\Ace\Desktop\krefa\app\Controllers\PeopleApi.php(16): CodeIgniter\BaseModel->findAll()
+#8 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\PeopleApi->index()
+#9 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeopleApi))
+#10 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\Ace\Desktop\krefa\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\Users\\Ace\\De...')
+#13 {main}
+CRITICAL - 2021-06-26 08:47:31 --> SQLite3::query(): Unable to prepare statement: 1, no such table: people
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'SQLite3::query(...', 'C:\\Users\\Ace\\De...', 148)
+#1 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Database\SQLite3\Connection.php(148): SQLite3->query('SELECT *\nFROM `...')
+#2 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(732): CodeIgniter\Database\SQLite3\Connection->execute('SELECT *\nFROM `...')
+#3 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#4 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1881): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#5 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Model.php(197): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\BaseModel.php(603): CodeIgniter\Model->doFindAll(0, 0)
+#7 C:\Users\Ace\Desktop\krefa\app\Controllers\PeopleApi.php(16): CodeIgniter\BaseModel->findAll()
+#8 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\PeopleApi->index()
+#9 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeopleApi))
+#10 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\Ace\Desktop\krefa\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\Users\\Ace\\De...')
+#13 {main}
+ERROR - 2021-06-26 08:49:44 --> ErrorException: SQLite3::query(): Unable to prepare statement: 1, no such table: krefa_people in C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Database\SQLite3\Connection.php:148
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'SQLite3::query(...', 'C:\\Users\\Ace\\De...', 148)
+#1 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Database\SQLite3\Connection.php(148): SQLite3->query('SELECT *\nFROM `...')
+#2 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(732): CodeIgniter\Database\SQLite3\Connection->execute('SELECT *\nFROM `...')
+#3 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#4 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1881): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#5 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Model.php(197): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\BaseModel.php(603): CodeIgniter\Model->doFindAll(0, 0)
+#7 C:\Users\Ace\Desktop\krefa\app\Controllers\PeopleApi.php(16): CodeIgniter\BaseModel->findAll()
+#8 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\PeopleApi->index()
+#9 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeopleApi))
+#10 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\Ace\Desktop\krefa\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\Users\\Ace\\De...')
+#13 {main}
+CRITICAL - 2021-06-26 08:49:44 --> SQLite3::query(): Unable to prepare statement: 1, no such table: krefa_people
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'SQLite3::query(...', 'C:\\Users\\Ace\\De...', 148)
+#1 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Database\SQLite3\Connection.php(148): SQLite3->query('SELECT *\nFROM `...')
+#2 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(732): CodeIgniter\Database\SQLite3\Connection->execute('SELECT *\nFROM `...')
+#3 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Database\BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#4 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1881): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#5 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Model.php(197): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\BaseModel.php(603): CodeIgniter\Model->doFindAll(0, 0)
+#7 C:\Users\Ace\Desktop\krefa\app\Controllers\PeopleApi.php(16): CodeIgniter\BaseModel->findAll()
+#8 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\PeopleApi->index()
+#9 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeopleApi))
+#10 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\Ace\Desktop\krefa\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\Users\\Ace\\De...')
+#13 {main}
+CRITICAL - 2021-06-26 10:09:47 --> There is no data to insert.
+#0 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\BaseModel.php(1668): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+#1 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\BaseModel.php(735): CodeIgniter\BaseModel->transformDataToArray(Array, 'insert')
+#2 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Model.php(686): CodeIgniter\BaseModel->insert(Array, true)
+#3 C:\Users\Ace\Desktop\krefa\app\Controllers\EventsApi.php(32): CodeIgniter\Model->insert(Array)
+#4 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\EventsApi->create()
+#5 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EventsApi))
+#6 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\Ace\Desktop\krefa\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\Users\\Ace\\De...')
+#9 {main}
+CRITICAL - 2021-06-26 10:10:14 --> There is no data to insert.
+#0 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\BaseModel.php(1668): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+#1 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\BaseModel.php(735): CodeIgniter\BaseModel->transformDataToArray(Array, 'insert')
+#2 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Model.php(686): CodeIgniter\BaseModel->insert(Array, true)
+#3 C:\Users\Ace\Desktop\krefa\app\Controllers\EventsApi.php(32): CodeIgniter\Model->insert(Array)
+#4 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\EventsApi->create()
+#5 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EventsApi))
+#6 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\Ace\Desktop\krefa\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\Users\\Ace\\De...')
+#9 {main}
+CRITICAL - 2021-06-26 10:10:53 --> There is no data to insert.
+#0 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\BaseModel.php(1668): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+#1 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\BaseModel.php(735): CodeIgniter\BaseModel->transformDataToArray(Array, 'insert')
+#2 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Model.php(686): CodeIgniter\BaseModel->insert(Array, true)
+#3 C:\Users\Ace\Desktop\krefa\app\Controllers\EventsApi.php(32): CodeIgniter\Model->insert(Array)
+#4 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\EventsApi->create()
+#5 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EventsApi))
+#6 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\Ace\Desktop\krefa\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\Users\\Ace\\De...')
+#9 {main}
+CRITICAL - 2021-06-26 10:11:09 --> There is no data to insert.
+#0 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\BaseModel.php(1668): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+#1 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\BaseModel.php(735): CodeIgniter\BaseModel->transformDataToArray(Array, 'insert')
+#2 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Model.php(686): CodeIgniter\BaseModel->insert(Array, true)
+#3 C:\Users\Ace\Desktop\krefa\app\Controllers\EventsApi.php(32): CodeIgniter\Model->insert(Array)
+#4 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\EventsApi->create()
+#5 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EventsApi))
+#6 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\Ace\Desktop\krefa\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\Users\\Ace\\De...')
+#9 {main}
+CRITICAL - 2021-06-26 10:15:28 --> There is no data to insert.
+#0 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\BaseModel.php(1668): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+#1 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\BaseModel.php(735): CodeIgniter\BaseModel->transformDataToArray(Array, 'insert')
+#2 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Model.php(686): CodeIgniter\BaseModel->insert(Array, true)
+#3 C:\Users\Ace\Desktop\krefa\app\Controllers\PeopleApi.php(35): CodeIgniter\Model->insert(Array)
+#4 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\PeopleApi->create()
+#5 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeopleApi))
+#6 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\Ace\Desktop\krefa\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\Users\\Ace\\De...')
+#9 {main}
+CRITICAL - 2021-06-26 10:16:11 --> There is no data to insert.
+#0 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\BaseModel.php(1668): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+#1 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\BaseModel.php(735): CodeIgniter\BaseModel->transformDataToArray(Array, 'insert')
+#2 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Model.php(686): CodeIgniter\BaseModel->insert(Array, true)
+#3 C:\Users\Ace\Desktop\krefa\app\Controllers\PeopleApi.php(35): CodeIgniter\Model->insert(Array)
+#4 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\PeopleApi->create()
+#5 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeopleApi))
+#6 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\Ace\Desktop\krefa\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\Users\\Ace\\De...')
+#9 {main}
+CRITICAL - 2021-06-26 10:16:24 --> There is no data to insert.
+#0 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\BaseModel.php(1668): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+#1 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\BaseModel.php(735): CodeIgniter\BaseModel->transformDataToArray(Array, 'insert')
+#2 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Model.php(686): CodeIgniter\BaseModel->insert(Array, true)
+#3 C:\Users\Ace\Desktop\krefa\app\Controllers\PeopleApi.php(35): CodeIgniter\Model->insert(Array)
+#4 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\PeopleApi->create()
+#5 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeopleApi))
+#6 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\Ace\Desktop\krefa\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\Users\\Ace\\De...')
+#9 {main}
+CRITICAL - 2021-06-26 10:39:53 --> CodeIgniter\Validation\Validation::withRequest(): Argument #1 ($request) must be of type CodeIgniter\HTTP\RequestInterface, array given, called in C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Controller.php on line 183
+#0 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Controller.php(183): CodeIgniter\Validation\Validation->withRequest(Array)
+#1 C:\Users\Ace\Desktop\krefa\app\Controllers\PeopleApi.php(46): CodeIgniter\Controller->validate(Array)
+#2 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\PeopleApi->update('1')
+#3 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeopleApi))
+#4 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\Users\Ace\Desktop\krefa\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#6 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\Users\\Ace\\De...')
+#7 {main}
+CRITICAL - 2021-06-26 10:42:23 --> Call to a member function run() on null
+#0 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\PeopleApi->update('1')
+#1 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeopleApi))
+#2 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\Ace\Desktop\krefa\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\Users\\Ace\\De...')
+#5 {main}
+CRITICAL - 2021-06-26 10:42:26 --> Call to a member function run() on null
+#0 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\PeopleApi->update('1')
+#1 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeopleApi))
+#2 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\Ace\Desktop\krefa\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\Users\\Ace\\De...')
+#5 {main}
+CRITICAL - 2021-06-26 10:54:28 --> Array to string conversion
+#0 C:\Users\Ace\Desktop\krefa\app\Controllers\PeopleApi.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string...', 'C:\\Users\\Ace\\De...', 48)
+#1 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\PeopleApi->update('1')
+#2 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeopleApi))
+#3 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\Ace\Desktop\krefa\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\Users\\Ace\\De...')
+#6 {main}
+CRITICAL - 2021-06-26 10:55:33 --> Array to string conversion
+#0 C:\Users\Ace\Desktop\krefa\app\Controllers\PeopleApi.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string...', 'C:\\Users\\Ace\\De...', 48)
+#1 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\PeopleApi->update('1')
+#2 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeopleApi))
+#3 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\Ace\Desktop\krefa\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\Users\\Ace\\De...')
+#6 {main}
+CRITICAL - 2021-06-26 10:56:50 --> Undefined array key "nama"
+#0 C:\Users\Ace\Desktop\krefa\app\Controllers\PeopleApi.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\Users\\Ace\\De...', 48)
+#1 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\PeopleApi->update('1')
+#2 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeopleApi))
+#3 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\Ace\Desktop\krefa\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\Users\\Ace\\De...')
+#6 {main}
+CRITICAL - 2021-06-26 10:57:34 --> Array to string conversion
+#0 C:\Users\Ace\Desktop\krefa\app\Controllers\PeopleApi.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string...', 'C:\\Users\\Ace\\De...', 32)
+#1 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\PeopleApi->create()
+#2 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeopleApi))
+#3 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\Ace\Desktop\krefa\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\Users\\Ace\\De...')
+#6 {main}
+CRITICAL - 2021-06-26 10:58:24 --> Cannot use [] for reading
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-06-26 10:59:46 --> Undefined array key "nama"
+#0 C:\Users\Ace\Desktop\krefa\app\Controllers\PeopleApi.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\Users\\Ace\\De...', 48)
+#1 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\PeopleApi->update('1')
+#2 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeopleApi))
+#3 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\Ace\Desktop\krefa\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\Users\\Ace\\De...')
+#6 {main}
+CRITICAL - 2021-06-26 11:01:06 --> syntax error, unexpected identifier "validation", expecting variable or "$"
+#0 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(273): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\Ace\\De...')
+#1 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(247): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(885): class_exists('\\App\\Controller...', true)
+#4 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(421): CodeIgniter\CodeIgniter->startController()
+#5 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\Ace\Desktop\krefa\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\Users\\Ace\\De...')
+#8 {main}
+CRITICAL - 2021-06-26 11:04:22 --> There is no data to update.
+#0 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\BaseModel.php(896): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Model.php(718): CodeIgniter\BaseModel->update(Array, Array)
+#2 C:\Users\Ace\Desktop\krefa\app\Controllers\PeopleApi.php(59): CodeIgniter\Model->update('1', Array)
+#3 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\PeopleApi->update('1')
+#4 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeopleApi))
+#5 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\Ace\Desktop\krefa\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\Users\\Ace\\De...')
+#8 {main}
+CRITICAL - 2021-06-26 11:06:54 --> There is no data to update.
+#0 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\BaseModel.php(896): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Model.php(718): CodeIgniter\BaseModel->update(Array, Array)
+#2 C:\Users\Ace\Desktop\krefa\app\Controllers\PeopleApi.php(62): CodeIgniter\Model->update('1', Array)
+#3 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\PeopleApi->update('1')
+#4 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeopleApi))
+#5 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\Ace\Desktop\krefa\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\Users\\Ace\\De...')
+#8 {main}
+CRITICAL - 2021-06-26 11:07:36 --> There is no data to update.
+#0 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\BaseModel.php(896): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Model.php(718): CodeIgniter\BaseModel->update(Array, Array)
+#2 C:\Users\Ace\Desktop\krefa\app\Controllers\PeopleApi.php(62): CodeIgniter\Model->update('1', Array)
+#3 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\PeopleApi->update('1')
+#4 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeopleApi))
+#5 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\Ace\Desktop\krefa\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\Users\\Ace\\De...')
+#8 {main}
+CRITICAL - 2021-06-26 11:07:48 --> There is no data to update.
+#0 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\BaseModel.php(896): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Model.php(718): CodeIgniter\BaseModel->update(Array, Array)
+#2 C:\Users\Ace\Desktop\krefa\app\Controllers\PeopleApi.php(62): CodeIgniter\Model->update('1', Array)
+#3 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\PeopleApi->update('1')
+#4 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeopleApi))
+#5 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\Ace\Desktop\krefa\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\Users\\Ace\\De...')
+#8 {main}
+CRITICAL - 2021-06-26 11:23:48 --> There is no data to update.
+#0 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\BaseModel.php(896): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Model.php(718): CodeIgniter\BaseModel->update(Array, Array)
+#2 C:\Users\Ace\Desktop\krefa\app\Controllers\PeopleApi.php(52): CodeIgniter\Model->update('1', Array)
+#3 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\PeopleApi->update('1')
+#4 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeopleApi))
+#5 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\Ace\Desktop\krefa\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\Users\\Ace\\De...')
+#8 {main}
+CRITICAL - 2021-06-26 11:24:36 --> There is no data to update.
+#0 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\BaseModel.php(896): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Model.php(718): CodeIgniter\BaseModel->update(Array, Array)
+#2 C:\Users\Ace\Desktop\krefa\app\Controllers\PeopleApi.php(52): CodeIgniter\Model->update('1', Array)
+#3 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\PeopleApi->update('1')
+#4 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeopleApi))
+#5 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\Ace\Desktop\krefa\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\Users\\Ace\\De...')
+#8 {main}
+CRITICAL - 2021-06-26 11:24:42 --> There is no data to update.
+#0 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\BaseModel.php(896): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Model.php(718): CodeIgniter\BaseModel->update(Array, Array)
+#2 C:\Users\Ace\Desktop\krefa\app\Controllers\PeopleApi.php(52): CodeIgniter\Model->update('1', Array)
+#3 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\PeopleApi->update('1')
+#4 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeopleApi))
+#5 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\Ace\Desktop\krefa\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\Users\\Ace\\De...')
+#8 {main}
+CRITICAL - 2021-06-26 11:25:03 --> There is no data to update.
+#0 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\BaseModel.php(896): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Model.php(718): CodeIgniter\BaseModel->update(Array, Array)
+#2 C:\Users\Ace\Desktop\krefa\app\Controllers\PeopleApi.php(52): CodeIgniter\Model->update('1', Array)
+#3 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\PeopleApi->update('1')
+#4 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PeopleApi))
+#5 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\Ace\Desktop\krefa\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\Users\\Ace\\De...')
+#8 {main}
+CRITICAL - 2021-06-26 19:37:07 --> syntax error, unexpected identifier "session", expecting "," or ";"
+#0 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(273): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\Ace\\De...')
+#1 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(247): CodeIgniter\Autoloader\Autoloader->loadInNamespace('Myth\\Auth\\Filte...')
+#2 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Filters\Filters.php(172): CodeIgniter\Autoloader\Autoloader->loadClass('Myth\\Auth\\Filte...')
+#3 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(407): CodeIgniter\Filters\Filters->run('login', 'before')
+#4 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\Users\Ace\Desktop\krefa\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#6 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\Users\\Ace\\De...')
+#7 {main}
+CRITICAL - 2021-06-26 20:08:34 --> Undefined array key "forgot"
+#0 C:\Users\Ace\Desktop\krefa\vendor\myth\auth\src\Controllers\AuthController.php(217): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\Users\\Ace\\De...', 217)
+#1 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(928): Myth\Auth\Controllers\AuthController->forgotPassword()
+#2 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+#3 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\Ace\Desktop\krefa\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\Ace\Desktop\krefa\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\Users\\Ace\\De...')
+#6 {main}
