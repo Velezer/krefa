@@ -25,12 +25,12 @@ findInterval = setInterval(async () => {
         if (goface) {
             goface = false
             formData = findFormData()
-            data = await postFormData('http://localhost:8081/find', formData)
+            data = await postFormData('http://'+hostname+':8081/find', formData)
             if (data.detected === "unknown") {
                 alert('Anda belum terdaftar')
-                window.location.replace("http://localhost:8080/face/register")
+                window.location.replace("http://"+hostname+":8080/face/register")
             }
-            alert(data)
+            alert(data.detected)
             setTimeout(() => {
                 goface = true
             }, 5000);

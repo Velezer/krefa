@@ -35,7 +35,7 @@ findInterval = setInterval(async () => {
             let counter = 0
             for (let i = 0; i < 11; i++) {
                 formData = registerFormData()
-                data = await postFormData('http://localhost:8081/register', formData)
+                data = await postFormData('http://'+hostname+':8081/register', formData)
                 console.log(data)
                 if (data.status == 'success') {
                     counter++

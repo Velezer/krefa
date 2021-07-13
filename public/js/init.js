@@ -1,4 +1,4 @@
-
+hostname = window.location.hostname
 config = { width: 320, height: 240, refreshTime: 200 }
 
 Webcam.set({
