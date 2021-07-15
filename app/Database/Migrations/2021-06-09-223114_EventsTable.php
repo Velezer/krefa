@@ -28,14 +28,6 @@ class EventsTable extends Migration
 				'type'        => 'VARCHAR',
 				'constraint'  => 255
 			],
-			'level' => [
-				'type' => 'VARCHAR',
-				'constraint' => 20
-			],
-			'konsep' => [
-				'type' => 'VARCHAR',
-				'constraint' => 255
-			],
 			'tempat' => [
 				'type' => 'VARCHAR',
 				'constraint' => 255
@@ -46,11 +38,21 @@ class EventsTable extends Migration
 			],
 			'tanggal' => [
 				'type' => 'DATE'
+			],
+			'people_id' => [
+				'type' => 'INT',
+				'constraint' => 11,
+				'unsigned' => true,
+				'null' => true
+				
 			]
 		]);
 
-
+		
 		$this->forge->addPrimaryKey('id');
+
+		$this->forge->addForeignKey('people_id', 'people', 'id');
+
 		$this->forge->createTable('events', true);
 
 	}

@@ -12,11 +12,10 @@ class MySeeder extends Seeder
 		'tema' => 'Iman',
 		'judul' => 'From Darkness',
 		'pembicara' => static::faker()->title .' '. static::faker()->name,
-		'level' => 'berat',
-		'konsep' => 'biasa',
 		'tempat' => static::faker()->company,
 		'keterangan_tambahan' => static::faker()->text,
-		'tanggal' => static::faker()->date()
+		'tanggal' => static::faker()->date(),
+		'people_id' => [1,2]
 		];
 
 		$dataPeople = [
@@ -26,7 +25,8 @@ class MySeeder extends Seeder
 			'alamat' => static::faker()->address
 		];
 
-		$this->db->table('events')->insert($dataEvents);
 		$this->db->table('people')->insert($dataPeople);
+		$this->db->table('people')->insert($dataPeople);
+		$this->db->table('events')->insert($dataEvents);
 	}
 }

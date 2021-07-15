@@ -2,6 +2,7 @@
 
 namespace App\Controllers;
 
+use App\Models\EventsModel;
 use CodeIgniter\RESTful\ResourceController;
 
 class EventsApi extends ResourceController
@@ -83,8 +84,10 @@ class EventsApi extends ResourceController
     
     public function show($id = null){
         $data = $this->model->find($id);
+
+        // $events = new EventsModel();
+        // $data = $events->getData();
         if($data){
-            
             $respond['data'] = $data;
             $respond['status'] = 'success';
             return $this->respond($respond);
