@@ -20,14 +20,17 @@ class ExecutionApi extends ResourceController
         }
 	}
 
-	/**
-	 * Return the properties of a resource object
-	 *
-	 * @return mixed
-	 */
+
 	public function show($id = null)
 	{
-		//
+		$data = $this->model->findPeopleByEventsId($id);
+
+        if ($data) {
+            $respond['data'] = $data;
+            $respond['status'] = 'success';
+            return $this->respond($respond);
+        }
+        return $this->failNotFound('id ' . $id . ' tidak ditemukan');
 	}
 
 	/**
