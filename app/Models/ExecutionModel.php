@@ -12,10 +12,10 @@ class ExecutionModel extends Model
 
 	// Dates
 	protected $useTimestamps        = true;
-	// protected $dateFormat           = 'datetime';
+	protected $dateFormat           = 'datetime';
 	protected $createdField         = 'hadir_pada';
 	protected $updatedField         = 'updated_at';
-	protected $deletedField         = 'deleted_at';
+	// protected $deletedField         = 'deleted_at';
 
 
 }

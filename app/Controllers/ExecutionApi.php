@@ -40,14 +40,20 @@ class ExecutionApi extends ResourceController
 		//
 	}
 
-	/**
-	 * Create a new resource object, from "posted" parameters
-	 *
-	 * @return mixed
-	 */
+
 	public function create()
 	{
-		//
+		// if (!$this->validate('insertPeople')) {
+        //     return $this->failValidationErrors($this->validator->getErrors());
+        // }
+
+        $data = $this->request->getVar();
+        if ($this->model->insert($data)) {
+            $respond['data'] = $data;
+            $respond['status'] = 'success';
+            $respond['message'] = 'Data berhasil ditambahkan';
+            return $this->respondCreated($respond, $respond['message']);
+        }
 	}
 
 	/**

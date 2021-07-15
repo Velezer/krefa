@@ -23,8 +23,8 @@ class MySeeder extends Seeder
 		];
 
 		$dataExecution = [
-			'id_events' => 4,
-			'id_people' => 4
+			'id_events' => 1,
+			'id_people' => 1
 		];
 
 		$this->db->table('people')->insert($dataPeople);
