@@ -16,10 +16,6 @@ class EventsTable extends Migration
 				'unsigned'       => true,
 				'auto_increment' => true
 			],
-			'tema' => [
-				'type' => 'VARCHAR',
-				'constraint' => 100,
-			],
 			'judul' => [
 				'type'         => 'VARCHAR',
 				'constraint'   => 255
@@ -32,26 +28,15 @@ class EventsTable extends Migration
 				'type' => 'VARCHAR',
 				'constraint' => 255
 			],
-			'keterangan_tambahan' => [
-				'type' => 'TEXT',
-				'null' => true
-			],
 			'tanggal' => [
 				'type' => 'DATE'
 			],
-			'people_id' => [
-				'type' => 'INT',
-				'constraint' => 11,
-				'unsigned' => true,
-				'null' => true
-				
-			]
 		]);
 
 		
 		$this->forge->addPrimaryKey('id');
 
-		$this->forge->addForeignKey('people_id', 'people', 'id');
+		// $this->forge->addForeignKey('people_id', 'people', 'id');
 
 		$this->forge->createTable('events', true);
 

@@ -39,6 +39,7 @@ $routes->group('presensi', function($routes){
 });
 
 $routes->resource('api/events', ['controller' => 'EventsApi']);
+$routes->resource('api/execution', ['controller' => 'ExecutionApi']); 
 $routes->resource('api/people', ['controller' => 'PeopleApi']); 
 
 /*

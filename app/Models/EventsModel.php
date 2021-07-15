@@ -8,7 +8,7 @@ class EventsModel extends Model
 {
     protected $table = 'events';
     protected $primaryKey = 'id';
-    protected $allowedFields = ['tema', 'judul', 'pembicara', 'tempat', 'keterangan_tambahan', 'tanggal', 'people_id'];
+    protected $allowedFields = ['judul', 'pembicara', 'tempat', 'tanggal', 'people_id'];
     
     // public function getData(){
     //     return $this->db->table('events')
