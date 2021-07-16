@@ -9,8 +9,5 @@ class Presensi extends BaseController
 		return view('presensi/find');
 	}
 	
-	public function register()
-	{
-		return view('presensi/register');
-	}
+
 }

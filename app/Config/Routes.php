@@ -35,8 +35,7 @@ $routes->setAutoRoute(true);
 
 // Page 
 $routes->group('presensi', function($routes){
-	$routes->get("", 'AttendanceApi::new');
-	$routes->get("edit", 'AttendanceApi::edit'); // after confirm
+	$routes->get("", 'Presensi::index');
 });
 
 $routes->group('peserta', function($routes){
