@@ -33,7 +33,7 @@ $routes->setAutoRoute(true);
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 
-// Page
+// Page 
 $routes->group('presensi', function($routes){
 	$routes->get("", 'AttendanceApi::new');
 	$routes->get("edit", 'AttendanceApi::edit'); // after confirm

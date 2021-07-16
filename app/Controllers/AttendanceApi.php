@@ -105,4 +105,15 @@ class AttendanceApi extends ResourceController
         return $this->failNotFound('id ' . $id . ' tidak ditemukan');
 	}
 
+
+    public function new()
+	{
+		return view('presensi/register');
+	}
+
+    public function edit($id = null)
+	{
+		return view('presensi/register');
+	}
+
 }
