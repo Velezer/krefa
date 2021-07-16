@@ -32,14 +32,37 @@ $routes->setAutoRoute(true);
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
-$routes->group('presensi', function($routes){
-	$routes->get("", 'Presensi::index');
-	$routes->get("register", 'Presensi::register');
 
+// Page
+$routes->group('presensi', function($routes){
+	$routes->get("", 'AttendanceApi::new');
+	$routes->get("edit", 'AttendanceApi::edit'); // after confirm
+});
+
+$routes->group('peserta', function($routes){
+	$routes->get("register", 'PeopleApi::new');
+	$routes->get("edit", 'PeopleApi::edit');
+});
+
+$routes->group('events', function($routes){
+	$routes->get("register", 'EventsApi::new');
+	$routes->get("edit", 'EventsApi::edit');
+});
+
+
+// API
+$routes->group('api/attendance', function($routes){
+	$routes->get("", 'AttendanceApi::index');
+	$routes->post("hadir", 'AttendanceApi::create');
+	$routes->put('update/(:segment)','AttendanceApi::update');
+	$routes->delete('delete/(:segment)','AttendanceApi::delete');
+	
+	$routes->get('events/(:segment)','AttendanceApi::showPeopleByEvents');
+	$routes->get('people/(:segment)','AttendanceApi::showEventsByPeople');
 });
 
 $routes->resource('api/events', ['controller' => 'EventsApi']);
-$routes->resource('api/execution', ['controller' => 'ExecutionApi']); 
+// $routes->resource('api/attendance', ['controller' => 'AttendanceApi']); 
 $routes->resource('api/people', ['controller' => 'PeopleApi']); 
 
 /*

@@ -29,6 +29,6 @@ class MySeeder extends Seeder
 
 		$this->db->table('people')->insert($dataPeople);
 		$this->db->table('events')->insert($dataEvents);
-		$this->db->table('execution')->insert($dataExecution);
+		$this->db->table('attendance')->insert($dataExecution);
 	}
 }

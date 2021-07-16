@@ -4,7 +4,7 @@ namespace App\Database\Migrations;
 
 use CodeIgniter\Database\Migration;
 
-class ExecutionTable extends Migration
+class AttendanceTable extends Migration
 {
 	public function up()
 	{
@@ -34,11 +34,11 @@ class ExecutionTable extends Migration
 		$this->forge->addPrimaryKey('id');
 		$this->forge->addForeignKey('id_events', 'events', 'id');
 		$this->forge->addForeignKey('id_people', 'people', 'id');
-		$this->forge->createTable('execution', true);
+		$this->forge->createTable('attendance', true);
 	}
 
 	public function down()
 	{
-		$this->forge->dropTable('execution', true);
+		$this->forge->dropTable('attendance', true);
 	}
 }
