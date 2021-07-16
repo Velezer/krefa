@@ -59,11 +59,11 @@ class PeopleApi extends ResourceController
 
     public function delete($id = null)
     {
-        if (!$this->model->find($id)) {
+        $data = $this->model->find($id);
+        if (!$data) {
             return $this->failNotFound('id ' . $id . ' tidak ditemukan');
         }
         
-        $data = $this->model->find($id);
         if ($this->model->delete($id)) {
             $respond['data'] = $data;
             $respond['status'] = 'success';

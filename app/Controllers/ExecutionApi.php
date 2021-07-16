@@ -33,16 +33,6 @@ class ExecutionApi extends ResourceController
         return $this->failNotFound('id ' . $id . ' tidak ditemukan');
 	}
 
-	/**
-	 * Return a new resource object, with default properties
-	 *
-	 * @return mixed
-	 */
-	public function new()
-	{
-		//
-	}
-
 
 	public function create()
 	{
@@ -59,15 +49,6 @@ class ExecutionApi extends ResourceController
         }
 	}
 
-	/**
-	 * Return the editable properties of a resource object
-	 *
-	 * @return mixed
-	 */
-	public function edit($id = null)
-	{
-		//
-	}
 
 	/**
 	 * Add or update a model resource, from "posted" properties
@@ -86,6 +67,16 @@ class ExecutionApi extends ResourceController
 	 */
 	public function delete($id = null)
 	{
-		//
+		$data = $this->model->find($id);
+		if (!$data) {
+            return $this->failNotFound('id ' . $id . ' tidak ditemukan');
+        }
+        
+        if ($this->model->delete($id)) {
+            $respond['data'] = $data;
+            $respond['status'] = 'success';
+            $respond['message'] = 'Data berhasil dihapus';
+            return $this->respondDeleted([$respond, $respond['message']]);
+        }
 	}
 }

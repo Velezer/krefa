@@ -28,7 +28,7 @@ class ExecutionModel extends Model
 	public function findEventsByPeopleId($id){
 		return $this->db->table('execution')
 		->select('*')
-		->where('id_events', $id)
+		->where('id_people', $id)
 		->join('events', 'execution.id_events = events.id')
 		// ->join('people', 'execution.id_people = people.id')
 		->get()->getResultArray();
