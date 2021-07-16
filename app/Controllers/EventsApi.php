@@ -95,13 +95,4 @@ class EventsApi extends ResourceController
     
 
 
-    public function new()
-	{
-		return view('presensi/register');
-	}
-
-    public function edit($id = null)
-	{
-		return view('presensi/register');
-	}
 }
