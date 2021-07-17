@@ -50,6 +50,7 @@ $routes->group('events', function($routes){
 
 
 // API
+// $routes->resource('api/attendance', ['controller' => 'AttendanceApi']); 
 $routes->group('api/attendance', function($routes){
 	$routes->get("", 'AttendanceApi::index');
 	$routes->post("hadir", 'AttendanceApi::create');
@@ -61,8 +62,9 @@ $routes->group('api/attendance', function($routes){
 });
 
 $routes->resource('api/events', ['controller' => 'EventsApi']);
-// $routes->resource('api/attendance', ['controller' => 'AttendanceApi']); 
+
 $routes->resource('api/people', ['controller' => 'PeopleApi']); 
+$routes->get('api/people/name/(:alpha)','PeopleApi::showByName');
 
 /*
  * --------------------------------------------------------------------
