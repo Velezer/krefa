@@ -21,7 +21,6 @@ submitBtn.addEventListener('click', (e) => {
     e.preventDefault()
     const formEl = document.querySelector("#form")
     const formData = new FormData(formEl)
-    // console.log(formData.get('name'))
     if (formData.get('name')) { console.log(formData.get('name')) }
     goface = true
 })
@@ -32,11 +31,10 @@ findInterval = setInterval(async () => {
         if (goface === true) {
             goface = false
 
-            formData = registerFormData()
-            data = await postFormData('http://' + hostname + ':8000/register', formData)
+            data = await postFormData('http://' + hostname + ':8000/register', registerFormData())
             console.log(data)
-            if (data.status == 'success') {
-                alert('success registering face')
+            if (data.detail !== undefined) {
+                alert(data.detail)
             }
 
         }

@@ -22,8 +22,9 @@ findInterval = setInterval(async () => {
         if (goface) {
             goface = false
             data = await postFormData('http://' + hostname + ':8000/find', findFormData())
-            if (data.status == 'fail') {
-                alert(data.message)
+            console.log(data)
+            if (data.detail !== undefined) {
+                alert(data.detail)
             }
             if (data.status == 'success') {
                 data = data.data
