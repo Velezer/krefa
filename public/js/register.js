@@ -35,6 +35,7 @@ findInterval = setInterval(async () => {
             console.log(data)
             if (data.detail !== undefined) {
                 alert(data.detail)
+                window.location.replace("http://" + hostname + ":8080/presensi")
             }
 
         }

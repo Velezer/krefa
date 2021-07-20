@@ -28,7 +28,7 @@ findInterval = setInterval(async () => {
             }
             if (data.status == 'success') {
                 data = data.data
-
+                console.log(data.detected)
                 arrayPerson = data.detected
                 for (person of arrayPerson) {
 
