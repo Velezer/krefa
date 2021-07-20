@@ -21,24 +21,28 @@ findInterval = setInterval(async () => {
     if (score >= 0.8) {
         if (goface) {
             goface = false
-            formData = findFormData()
-            data = await postFormData('http://' + hostname + ':8000/find', formData)
+            data = await postFormData('http://' + hostname + ':8000/find', findFormData())
+            if (data.status == 'fail') {
+                alert(data.message)
+            }
             if (data.status == 'success') {
                 data = data.data
 
                 arrayPerson = data.detected
                 for (person of arrayPerson) {
 
-                    rightPerson = confirm(person)
-                    if (rightPerson && rightPerson != 'Unknown') {
-                        alert('Welcome ', person)
+                    if (person == "Unknown") {
+                        alert('Anda belum terdaftar')
+                        window.location.replace("http://" + hostname + ":8080/peserta/register")
                         break
+                    } else {
+                        rightPerson = confirm(person)
+                        if (rightPerson) {
+                            alert(`Welcome ${person}`)
+                            break
+                        }
                     }
 
-                    if (person === "Unknown") {
-                        alert('Anda belum terdaftar')
-                        window.location.replace("http://" + hostname + ":8000/peserta/register")
-                    }
 
                 }
             }
