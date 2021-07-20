@@ -94,4 +94,9 @@ class PeopleApi extends ResourceController
         }
         return $this->failNotFound('id ' . $name . ' tidak ditemukan');
     }
+
+    public function new()
+	{
+		return view('peserta/register');
+	}
 }

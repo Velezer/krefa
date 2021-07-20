@@ -28,14 +28,14 @@ submitBtn.addEventListener('click', (e) => {
 
 
 findInterval = setInterval(async () => {
-    if (score > 0.9) {
+    if (score > 0.8) {
         if (goface === true) {
             goface = false
 
             let counter = 0
-            for (let i = 0; i < 11; i++) {
+            for (let i = 0; i < 5; i++) {
                 formData = registerFormData()
-                data = await postFormData('http://'+hostname+':8081/register', formData)
+                data = await postFormData('http://'+hostname+':8000/register', formData)
                 console.log(data)
                 if (data.status == 'success') {
                     counter++

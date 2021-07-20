@@ -1,5 +1,5 @@
 hostname = window.location.hostname
-config = { width: 320, height: 240, refreshTime: 200 }
+config = { width: 640, height: 480, refreshTime: 200 }
 
 Webcam.set({
     width: config.width, // 4

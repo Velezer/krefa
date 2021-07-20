@@ -7,10 +7,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     
-    <script defer src="../js/face-api.min.js"></script>
-    <script defer src="../js/webcam.js"></script>
-    <script defer src="../js/init.js"></script>
-    <script defer src="../js/register.js"></script>
+    <script defer src="<?=base_url()?>/js/face-api.min.js"></script>
+    <script defer src="<?=base_url()?>/js/webcam.js"></script>
+    <script defer src="<?=base_url()?>/js/init.js"></script>
+    <script defer src="<?=base_url()?>/js/register.js"></script>
 
 
     <style>
