@@ -27,6 +27,8 @@ video.addEventListener('play', () => {
         faceapi.draw.drawDetections(canvas, resizedDetections)
         if (detections.length > 0) {
             score = detections[0].score
+        } else {
+            score = 0
         }
     }, config.refreshTime)
 })
