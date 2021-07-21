@@ -18,7 +18,7 @@ function findFormData() {
 goface = true
 
 findInterval = setInterval(async () => {
-    if (score >= 0.8) {
+    if (score >= 0.7) {
         if (goface) {
             goface = false
             data = await postFormData('http://' + hostname + ':8000/find', findFormData())
@@ -27,11 +27,8 @@ findInterval = setInterval(async () => {
                 alert(data.detail)
             }
             if (data.status == 'success') {
-                data = data.data
-                console.log(data.detected)
-                arrayPerson = data.detected
+                arrayPerson = data.data
                 for (person of arrayPerson) {
-
                     if (person == "Unknown") {
                         alert('Anda belum terdaftar')
                         window.location.replace("http://" + hostname + ":8080/peserta/register")
@@ -43,8 +40,6 @@ findInterval = setInterval(async () => {
                             break
                         }
                     }
-
-
                 }
             }
             setTimeout(() => {
