@@ -24,9 +24,6 @@ findInterval = setInterval(async () => {
             data = await postFormData('http://' + hostname + ':8000/find', findFormData())
 
             console.log(data)
-            if (data.detail !== undefined) {
-                alert(data.detail)
-            }
             if (data.status == 'success') {
                 arrayPerson = data.data
                 for (person of arrayPerson) {
@@ -40,9 +37,12 @@ findInterval = setInterval(async () => {
                     }
                 }
             }
-            setTimeout(() => {
-                goface = true
-            }, 5000);
+            if (data.detail !== undefined) {
+                if (data.detail != 'Wajah tidak terdeteksi') {
+                    alert(data.detail)
+                }
+            }
+            goface = true
         }
     }
 }, config.refreshTime)
