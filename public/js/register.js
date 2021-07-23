@@ -31,13 +31,22 @@ findInterval = setInterval(async () => {
         if (goface === true) {
             goface = false
 
-            data = await postFormData('http://' + hostname + ':8000/register', registerFormData())
-            console.log(data)
-            if (data.detail !== undefined) {
-                alert(data.detail)
-		if (data.status == 'success'){
-                window.location.replace("http://" + hostname + ":8080/presensi")}
+            count = 0
+            for (let i = 0; i < 9; i++) {
+                data = await postFormData('http://' + hostname + ':8000/register', registerFormData())
+                console.log(data)
+                if (data.status == 'success') {
+                    name = data.name
+                    count++
+                }
             }
+            if (count > 0) { 
+                alert("Sukses! Menambahkan " + count + " wajah " + name)
+                window.location.replace("http://" + hostname + ":8080/presensi")
+            } else {
+                alert("Gagal mengambil data wajah, mohon ulangi")
+            }
+
             goface = true
         }
     }

@@ -1,5 +1,5 @@
 hostname = window.location.hostname
-config = { width: 400, height: 300, refreshTime: 200 }
+config = { width: 400, height: 300, refreshTime: 150 }
 
 Webcam.set({
     width: config.width, // 4
@@ -24,9 +24,11 @@ video.addEventListener('play', () => {
         const detections = await faceapi.detectAllFaces(video, new faceapi.TinyFaceDetectorOptions())
         const resizedDetections = faceapi.resizeResults(detections, displaySize)
         canvas.getContext('2d').clearRect(0, 0, config.width, config.height)
-        faceapi.draw.drawDetections(canvas, resizedDetections)
         if (detections.length > 0) {
             score = detections[0].score
+            if (score > 0.5){
+                faceapi.draw.drawDetections(canvas, resizedDetections)
+            }
         } else {
             score = 0
         }
