@@ -31,9 +31,14 @@ findInterval = setInterval(async () => {
                         alert('Anda belum terdaftar')
                         window.location.replace("http://" + hostname + ":8080/peserta/register")
                         break
-                    } else if (confirm(person)) {
-                        alert(`Welcome ${person}`)
-                        break
+                    } else {
+                        // data = get data api/people/name/(:alpha)
+                        // console.log(data) // show data as modal
+                        if (confirm(person)) {
+                            // data = await postFormData('http://' + hostname + ':8080/api/attendance/hadir', findFormData())
+                            alert(`Welcome ${person}`)
+                            break
+                        }
                     }
                 }
             }
