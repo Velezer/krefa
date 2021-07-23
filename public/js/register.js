@@ -34,21 +34,22 @@ findInterval = setInterval(async () => {
             for (let i = 0; i < 5; i++) {
                 postFormData('http://' + hostname + ':8000/register', registerFormData())
             }
-            count = 0
-            for (let i = 0; i < 3; i++) {
+            counter = 0
+            while (true) {
                 data = await postFormData('http://' + hostname + ':8000/register', registerFormData())
                 console.log(data)
                 if (data.status == 'success') {
-                    name = data.name
-                    count++
+                    alert("Sukses! Menambahkan wajah " + data.name)
+                    window.location.replace("http://" + hostname + ":8080/presensi")
+                } else {
+                    counter++
                 }
+
+                if (counter == 3) break
             }
-            if (count > 0) { 
-                alert("Sukses! Menambahkan wajah " + name)
-                window.location.replace("http://" + hostname + ":8080/presensi")
-            } else {
-                alert("Gagal mengambil data wajah, mohon ulangi")
-            }
+
+            alert("Gagal mengambil data wajah, mohon ulangi")
+
 
             goface = true
         }
