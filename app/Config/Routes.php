@@ -35,8 +35,11 @@ $routes->setAutoRoute(true);
 
 // Page 
 $routes->group('presensi', function($routes){
-	$routes->get("", 'Presensi::index');
+	$routes->get("(:num)", 'Presensi::index/$1');
 });
+
+// $routes->get('presensi/(:num)', 'Presensi::index');
+
 
 $routes->group('peserta', function($routes){
 	$routes->get("register", 'PeopleApi::new');
