@@ -27,35 +27,33 @@ submitBtn.addEventListener('click', (e) => {
 
 
 findInterval = setInterval(async () => {
-    if (score > 0.9) {
-        if (goface === true) {
-            goface = false
+    if (score > 0.9 && goface === true) {
+        goface = false
 
-            for (let i = 0; i < 5; i++) {
-                postFormData('http://' + hostname + ':8000/register', registerFormData())
-            }
-
-            for (let i = 0; i < 3; i++) {
-                data = await postFormData('http://' + hostname + ':8000/register', registerFormData())
-                console.log(data)
-                if (data.status == 'success') {
-                    // dataPeople = await postFormData('http://' + hostname + ':8080/api/people', registerFormData())
-                    // if (dataPeople.status == 'success') {
-                    //     dataPeople = dataPeople.data
-                    //     console.log(dataPeople)
-                    //     // alert("Sukses! Menambahkan wajah " + data.name)
-                    //     // window.location.replace("http://" + hostname + ":8080/presensi")
-                    // }
-                    alert("Sukses! Menambahkan wajah " + data.name)
-                    window.location.replace("http://" + hostname + ":8080/presensi")
-
-                }
-            }
-
-            alert("Gagal mengambil data wajah, mohon ulangi")
-
-
-            goface = true
+        for (let i = 0; i < 5; i++) {
+            postFormData('http://' + hostname + ':8000/register', registerFormData())
         }
+
+        for (let i = 0; i < 3; i++) {
+            data = await postFormData('http://' + hostname + ':8000/register', registerFormData())
+            console.log(data)
+            if (data.status == 'success') {
+                // dataPeople = await postFormData('http://' + hostname + ':8080/api/people', registerFormData())
+                // if (dataPeople.status == 'success') {
+                //     dataPeople = dataPeople.data
+                //     console.log(dataPeople)
+                //     // alert("Sukses! Menambahkan wajah " + data.name)
+                //     // window.location.replace("http://" + hostname + ":8080/presensi")
+                // }
+                alert("Sukses! Menambahkan wajah " + data.name)
+                window.location.replace("http://" + hostname + ":8080/presensi")
+
+            }
+        }
+
+        alert("Gagal mengambil data wajah, mohon ulangi")
+
+
+        goface = true
     }
 }, config.refreshTime)
