@@ -56,4 +56,12 @@ class Validation
 		'alamat' => 'required',
 		'file' => 'uploaded[file]|max_size[file,2048]|is_image[file]'
 	];
+
+	public $updatePeople = [
+		// 'id' => 'required',
+		'nama' => 'required',
+		'whatsapp' => 'required|max_length[16]|min_length[9]',
+		'alamat' => 'required',
+		'file' => 'uploaded[file]|max_size[file,2048]|is_image[file]'
+	];
 }

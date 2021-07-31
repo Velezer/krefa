@@ -27,7 +27,12 @@ class PeopleApi extends ResourceController
         }
 
         $data = $this->request->getPost();
-        $data['foto'] = $this->request->getFile('file')->store('img/', $data['id'] . '.jpg');;
+        $id = $data['id'];
+        if ($this->model->find($id)) {
+            return $this->failResourceExists('id ' . $id . ' sudah dipakai'); // code: 409
+        }
+
+        $data['foto'] = $this->request->getFile('file')->store('img/', $data['id'] . '.jpg');
         if ($this->model->insert($data)) {
             $respond['data'] = $data;
             $respond['status'] = 'success';
@@ -42,11 +47,14 @@ class PeopleApi extends ResourceController
             return $this->failNotFound('id ' . $id . ' tidak ditemukan');
         }
 
-        if (!$this->validate('insertPeople')) {
+        $data = $this->request->getRawInput();
+        // if (!$this->validator->run($data, 'insertPeople')) {
+        //     return $this->failValidationErrors($this->validator->getErrors());
+        // }
+        if (!$this->validate('updatePeople')) {
             return $this->failValidationErrors($this->validator->getErrors());
         }
 
-        $data = $this->request->getRawInput();
         $data['id'] = $id;
         $data['foto'] = $this->request->getFile('file')->store('img/', $data['id'] . '.jpg');
         if ($this->model->update($id, $data)) {
@@ -59,14 +67,14 @@ class PeopleApi extends ResourceController
 
     public function delete($id = null)
     {
+        if (!$this->model->find($id)) {
+            return $this->failNotFound('id ' . $id . ' tidak ditemukan');
+        }
+
         if ($this->model->delete($id)) {
             $respond['status'] = 'success';
             $respond['message'] = $id . ' berhasil dihapus';
             return $this->respondDeleted($respond, $respond['message']);
-        }
-
-        if (!$$this->model->find($id)) {
-            return $this->failNotFound('id ' . $id . ' tidak ditemukan');
         }
     }
 
