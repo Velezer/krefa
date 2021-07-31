@@ -36,14 +36,14 @@ findInterval = setInterval(async () => {
         if (data.status == 'success') {
             arrayPerson = data.data
             for (person of arrayPerson) {
-                if (person == "Unknown") {
+                if (person.Name == "Unknown") {
                     alert('Anda belum terdaftar')
                     window.location.replace("http://" + hostname + ":8080/peserta/register")
                     break
                 }
                 // data = get data api/people/name/(:alpha)
                 // console.log(data) // show data as modal
-                if (confirm(person)) {
+                if (confirm(person.Name)) {
                     // idEvents = 
                     // idPeople =
                     // formData = attendFormData(idEvents, idPeople)
@@ -58,7 +58,7 @@ findInterval = setInterval(async () => {
                     //     alert(`Gagal, mohon ulangi`)
                     //     break
                     // }
-                    alert(`Welcome ${person}`)
+                    alert(`Welcome ${person.Name}`)
                     break
                 }
             }

@@ -6,14 +6,14 @@ use CodeIgniter\Model;
 
 class PeopleModel extends Model
 {
-    protected $table = 'people';
-    protected $primaryKey = 'id';
-    protected $allowedFields = ['foto', 'nama', 'whatsapp', 'alamat'];
+	protected $table = 'people';
+	protected $primaryKey = 'id';
+	protected $allowedFields = ['id', 'nama', 'whatsapp', 'alamat'];
 
-    public function findByName($name){
-		return $this->db->table('people')
-		->select('*')
-		->where('name', $name)
-		->get()->getResultArray();
+	public function findByName($name)
+	{
+		return $this->select('*')
+			->where('name', $name)
+			->get()->getResultArray();
 	}
 }

@@ -8,6 +8,7 @@ function registerFormData() {
         base64 = data_uri.replace(/^data\:image\/\w+\;base64\,/, '')
         blob = Webcam.base64DecToArr(base64) //uint8array
         imageFile = new File([blob], "image.jpeg")
+        formData.append('id', "123")
         formData.append('file', imageFile)
     })
 
@@ -30,9 +31,7 @@ findInterval = setInterval(async () => {
     if (score > 0.9 && goface === true) {
         goface = false
 
-        for (let i = 0; i < 5; i++) {
-            postFormData('http://' + hostname + ':8000/register', registerFormData())
-        }
+
 
         for (let i = 0; i < 3; i++) {
             data = await postFormData('http://' + hostname + ':8000/register', registerFormData())
@@ -45,13 +44,17 @@ findInterval = setInterval(async () => {
                 //     // alert("Sukses! Menambahkan wajah " + data.name)
                 //     // window.location.replace("http://" + hostname + ":8080/presensi")
                 // }
-                alert("Sukses! Menambahkan wajah " + data.name)
-                window.location.replace("http://" + hostname + ":8080/presensi")
+                alert("Sukses! Menambahkan wajah " + data.Name)
+                // window.location.replace("http://" + hostname + ":8080/presensi")
 
             }
         }
+        for (let i = 0; i < 5; i++) {
+            data = await postFormData('http://' + hostname + ':8000/register', registerFormData())
+            console.log(data)
+        }
 
-        alert("Gagal mengambil data wajah, mohon ulangi")
+        // alert("Gagal mengambil data wajah, mohon ulangi")
 
 
         goface = true

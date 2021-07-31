@@ -46,14 +46,14 @@ class Validation
 		'tema' => 'required',
 		'judul' => 'required',
 		'pembicara' => 'required',
-		'level' => 'required',
-		'konsep' => 'required',
 		'tempat' => 'required'
 	];
 
 	public $insertPeople = [
+		'id' => 'required',
 		'nama' => 'required',
 		'whatsapp' => 'required|max_length[16]|min_length[9]',
-		'alamat' => 'required'
+		'alamat' => 'required',
+		'file' => 'uploaded[file]|max_size[file,2048]|is_image[file]'
 	];
 }

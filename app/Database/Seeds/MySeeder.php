@@ -16,6 +16,7 @@ class MySeeder extends Seeder
 		];
 
 		$dataPeople = [
+			'id' => '2312321',
 			'foto' => static::faker()->imageUrl(),
 			'nama' => static::faker()->name,
 			'whatsapp' => static::faker()->phoneNumber,
