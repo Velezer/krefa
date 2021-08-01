@@ -2,7 +2,10 @@
 
 namespace App\Controllers;
 
+use CodeIgniter\CodeIgniter;
+use CodeIgniter\HTTP\Request;
 use CodeIgniter\RESTful\ResourceController;
+use CodeIgniter\Validation\Validation;
 
 class PeopleApi extends ResourceController
 {
@@ -32,7 +35,7 @@ class PeopleApi extends ResourceController
             return $this->failResourceExists('id ' . $id . ' sudah dipakai'); // code: 409
         }
 
-        $data['foto'] = $this->request->getFile('file')->store('img/', $data['id'] . '.jpg');
+        $data['foto'] = $this->request->getFile('file')->move('img/', $data['id'] . '.jpg');
         if ($this->model->insert($data)) {
             $respond['data'] = $data;
             $respond['status'] = 'success';
@@ -48,7 +51,8 @@ class PeopleApi extends ResourceController
         }
 
         $data = $this->request->getRawInput();
-        // if (!$this->validator->run($data, 'insertPeople')) {
+        // $this->validator = \Config\Services::validation();
+        // if (!$this->validator->run($data, 'updatePeople')) {
         //     return $this->failValidationErrors($this->validator->getErrors());
         // }
         if (!$this->validate('updatePeople')) {
@@ -56,7 +60,7 @@ class PeopleApi extends ResourceController
         }
 
         $data['id'] = $id;
-        $data['foto'] = $this->request->getFile('file')->store('img/', $data['id'] . '.jpg');
+        $data['foto'] = $this->request->getFile('file')->move('img/', $data['id'] . '.jpg');
         if ($this->model->update($id, $data)) {
             $respond['data'] = $data;
             $respond['status'] = 'success';
