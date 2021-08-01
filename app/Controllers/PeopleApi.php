@@ -34,8 +34,9 @@ class PeopleApi extends ResourceController
         if ($this->model->find($id)) {
             return $this->failResourceExists('id ' . $id . ' sudah dipakai'); // code: 409
         }
-
-        $data['foto'] = $this->request->getFile('file')->move('img/', $data['id'] . '.jpg');
+        if ($this->request->getFile('file')->move('img/', $data['id'] . '.jpg')) {
+            $data['foto'] = 'img/' . $data['id'] . '.jpg';
+        }
         if ($this->model->insert($data)) {
             $respond['data'] = $data;
             $respond['status'] = 'success';
@@ -50,17 +51,17 @@ class PeopleApi extends ResourceController
             return $this->failNotFound('id ' . $id . ' tidak ditemukan');
         }
 
-        $data = $this->request->getRawInput();
-        // $this->validator = \Config\Services::validation();
-        // if (!$this->validator->run($data, 'updatePeople')) {
-        //     return $this->failValidationErrors($this->validator->getErrors());
-        // }
+        // $data = $this->request->getRawInput();
+        $data = $this->request->getVar();
+
         if (!$this->validate('updatePeople')) {
             return $this->failValidationErrors($this->validator->getErrors());
         }
 
         $data['id'] = $id;
-        $data['foto'] = $this->request->getFile('file')->move('img/', $data['id'] . '.jpg');
+        if ($this->request->getFile('file')->move('img/', $data['id'] . '.jpg')) {
+            $data['foto'] = 'img/' . $data['id'] . '.jpg';
+        }
         if ($this->model->update($id, $data)) {
             $respond['data'] = $data;
             $respond['status'] = 'success';
