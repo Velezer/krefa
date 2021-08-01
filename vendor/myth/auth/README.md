@@ -1,17 +1,17 @@
 # Myth:Auth
 
 [![](https://github.com/lonnieezell/myth-auth/workflows/PHPUnit/badge.svg)](https://github.com/lonnieezell/myth-auth/actions?query=workflow%3A%22PHPUnit%22)
+[![](https://github.com/lonnieezell/myth-auth/workflows/PHPStan/badge.svg)](https://github.com/lonnieezell/myth-auth/actions?query=workflow%3A%22PHPStan)
+[![Coverage Status](https://coveralls.io/repos/github/lonnieezell/myth-auth/badge.svg?branch=develop)](https://coveralls.io/github/lonnieezell/myth-auth?branch=develop)
 
 Flexible, Powerful, Secure auth package for CodeIgniter 4.
 
-**NOTE: This package is under early development and is not ready for prime-time.**
-
-This repo is maintained by volunteers. If you post an issue and haven't heard from us within 7 days, feel free to ping the issue so that we see it again. 
+*This repo is maintained by volunteers. If you post an issue and haven't heard from us within 7 days, feel free to ping the issue so that we see it again.*
 
 ## Requirements
 
-- PHP 7.2+
-- CodeIgniter 4. Changes in beta-3 require the latest develop branch of CodeIgniter 4 to work correctly (4.0.3 won't do).
+- PHP 7.3+, 8.0+
+- CodeIgniter 4.0.4+
 
 ## Features
 
@@ -50,6 +50,11 @@ namespace to the **$psr4** array. For example, if you copied it into **app/Third
         'Myth\Auth'   => APPPATH .'ThirdParty/myth-auth/src',
     ];
 ```
+
+### Upgrading
+
+Be sure to check the [Changes Docs](https://github.com/lonnieezell/myth-auth/blob/develop/docs/_changes.md) for
+necessary steps to take after upgrading versions.
 
 ## Configuration
 

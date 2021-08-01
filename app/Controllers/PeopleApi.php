@@ -37,7 +37,8 @@ class PeopleApi extends ResourceController
         if ($this->request->getFile('file')->move('img/', $data['id'] . '.jpg')) {
             $data['foto'] = 'img/' . $data['id'] . '.jpg';
         }
-        if ($this->model->insert($data)) {
+
+        if ($this->model->insert($data, false)) {
             $respond['data'] = $data;
             $respond['status'] = 'success';
             $respond['message'] = 'Data berhasil ditambahkan';

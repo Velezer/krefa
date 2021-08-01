@@ -152,13 +152,21 @@ class AuthController extends Controller
 
 		$users = model(UserModel::class);
 
-		// Validate here first, since some things,
-		// like the password, can only be validated properly here.
+		// Validate basics first since some password rules rely on these fields
 		$rules = [
-			'username'  	=> 'required|alpha_numeric_space|min_length[3]|max_length[30]|is_unique[users.username]',
-			'email'			=> 'required|valid_email|is_unique[users.email]',
-			'password'	 	=> 'required|strong_password',
-			'pass_confirm' 	=> 'required|matches[password]',
+			'username' => 'required|alpha_numeric_space|min_length[3]|max_length[30]|is_unique[users.username]',
+			'email'    => 'required|valid_email|is_unique[users.email]',
+		];
+
+		if (! $this->validate($rules))
+		{
+			return redirect()->back()->withInput()->with('errors', $this->validator->getErrors());
+		}
+
+		// Validate passwords since they can only be validated properly here
+		$rules = [
+			'password'     => 'required|strong_password',
+			'pass_confirm' => 'required|matches[password]',
 		];
 
 		if (! $this->validate($rules))
@@ -170,7 +178,7 @@ class AuthController extends Controller
 		$allowedPostFields = array_merge(['password'], $this->config->validFields, $this->config->personalFields);
 		$user = new User($this->request->getPost($allowedPostFields));
 
-		$this->config->requireActivation === null ? $user->activate : $user->generateActivateHash();
+		$this->config->requireActivation === null ? $user->activate() : $user->generateActivateHash();
 
 		// Ensure default group gets assigned if set
         if (! empty($this->config->defaultUserGroup)) {
@@ -349,7 +357,7 @@ class AuthController extends Controller
 
 		$throttler = service('throttler');
 
-		if ($throttler->check($this->request->getIPAddress(), 2, MINUTE) === false)
+		if ($throttler->check(md5($this->request->getIPAddress()), 2, MINUTE) === false)
         {
 			return service('response')->setStatusCode(429)->setBody(lang('Auth.tooManyRequests', [$throttler->getTokentime()]));
         }
@@ -384,7 +392,7 @@ class AuthController extends Controller
 
 		$throttler = service('throttler');
 
-		if ($throttler->check($this->request->getIPAddress(), 2, MINUTE) === false)
+		if ($throttler->check(md5($this->request->getIPAddress()), 2, MINUTE) === false)
 		{
 			return service('response')->setStatusCode(429)->setBody(lang('Auth.tooManyRequests', [$throttler->getTokentime()]));
 		}

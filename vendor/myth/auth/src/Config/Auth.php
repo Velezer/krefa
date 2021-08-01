@@ -147,9 +147,8 @@ class Auth extends BaseConfig
 	 *
 	 * @var string|null Name of the ActivatorInterface class
 	 */
-	// public $requireActivation = 'Myth\Auth\Authentication\Activators\EmailActivator';
-	public $requireActivation = false;
-	
+	public $requireActivation = 'Myth\Auth\Authentication\Activators\EmailActivator';
+
 	/**
 	 * --------------------------------------------------------------------
 	 * Allow Password Reset via Email
@@ -160,8 +159,7 @@ class Auth extends BaseConfig
 	 *
 	 * @var string|null Name of the ResetterInterface class
 	 */
-	// public $activeResetter = 'Myth\Auth\Authentication\Resetters\EmailResetter';
-	public $activeResetter = false;
+	public $activeResetter = 'Myth\Auth\Authentication\Resetters\EmailResetter';
 
 	/**
 	 * --------------------------------------------------------------------
