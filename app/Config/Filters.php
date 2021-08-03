@@ -22,7 +22,8 @@ class Filters extends BaseConfig
 		'login'      => \Myth\Auth\Filters\LoginFilter::class,
 		'role'       => \Myth\Auth\Filters\RoleFilter::class,
 		'permission' => \Myth\Auth\Filters\PermissionFilter::class,
-		'options' => \App\Filters\Options::class,
+		'options' => \App\Filters\OptionsFilter::class,
+		'oauth2' => \App\Filters\Oauth2Filter::class,
 	];
 
 	/**
@@ -66,6 +67,7 @@ class Filters extends BaseConfig
 	 */
 	public $filters = [
 		// 'login' => ['before' => ['api/*']],
+		'oauth2' => ['before' => ['api/*']],
 
 	];
 }

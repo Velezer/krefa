@@ -157,6 +157,13 @@ class ComposerStaticInit6c82035c575dc824aa349314cd7542c1
                 0 => __DIR__ . '/..' . '/mikey179/vfsstream/src/main/php',
             ),
         ),
+        'O' => 
+        array (
+            'OAuth2' => 
+            array (
+                0 => __DIR__ . '/..' . '/bshaffer/oauth2-server-php/src',
+            ),
+        ),
     );
 
     public static $classMap = array (

@@ -2,6 +2,8 @@
 
 namespace Config;
 
+use App\Controllers\Oauth2Controller;
+
 // Create a new instance of our RouteCollection class.
 $routes = Services::routes();
 
@@ -68,6 +70,8 @@ $routes->resource('api/events', ['controller' => 'EventsApi']);
 
 $routes->resource('api/people', ['controller' => 'PeopleApi']); 
 $routes->get('api/people/name/(:alpha)','PeopleApi::showByName');
+
+$routes->post('oauth2/login', 'Oauth2Controller::login');
 
 /*
  * --------------------------------------------------------------------

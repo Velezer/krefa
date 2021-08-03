@@ -6,7 +6,7 @@ use CodeIgniter\Filters\FilterInterface;
 use CodeIgniter\HTTP\RequestInterface;
 use CodeIgniter\HTTP\ResponseInterface;
 
-class Options implements FilterInterface
+class Oauth2Filter implements FilterInterface
 {
 	/**
 	 * Do whatever processing this filter needs to do.
@@ -25,8 +25,16 @@ class Options implements FilterInterface
 	 */
 	public function before(RequestInterface $request, $arguments = null)
 	{
-		header('Access-Control-Allow-Origin: *');
-		// header('Access-Control-Allow-Methods: GET');
+		$oauth2 = new \App\Libraries\Oauth2Server();
+		$server = $oauth2->server;
+		
+		$request = \OAuth2\Request::createFromGlobals();
+
+		$response = $server->verifyResourceRequest($request);
+		if (!$response) {
+			$server->getResponse()->send(); // return status code 401
+			die();
+		}
 	}
 
 	/**
