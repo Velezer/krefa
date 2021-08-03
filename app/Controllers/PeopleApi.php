@@ -34,8 +34,10 @@ class PeopleApi extends ResourceController
         if ($this->model->find($id)) {
             return $this->failResourceExists('id ' . $id . ' sudah dipakai'); // code: 409
         }
-        if ($this->request->getFile('file')->move('img/', $data['id'] . '.jpg')) {
-            $data['foto'] = 'img/' . $data['id'] . '.jpg';
+
+        $file = $this->request->getFile('file');
+        if ($file->move('img/', $data['id'] . '.jpg')) {
+            $data['foto'] = 'img/' . $file->getName();
         }
 
         if ($this->model->insert($data, false)) {
@@ -60,8 +62,9 @@ class PeopleApi extends ResourceController
         }
 
         $data['id'] = $id;
-        if ($this->request->getFile('file')->move('img/', $data['id'] . '.jpg')) {
-            $data['foto'] = 'img/' . $data['id'] . '.jpg';
+        $file = $this->request->getFile('file');
+        if ($file->move('img/', $data['id'] . '.jpg')) {
+            $data['foto'] = 'img/' . $file->getName();
         }
         if ($this->model->update($id, $data)) {
             $respond['data'] = $data;
