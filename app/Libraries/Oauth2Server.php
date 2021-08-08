@@ -17,6 +17,7 @@ class Oauth2Server
         $storage = new \OAuth2\Storage\Pdo(array('dsn' => $dsn, 'username' => $username, 'password' => $password));
 
         $this->server = new \OAuth2\Server($storage);
+        $this->server->addGrantType(new \OAuth2\GrantType\RefreshToken($storage));
         $this->server->addGrantType(new \OAuth2\GrantType\UserCredentials($storage));
     }
 

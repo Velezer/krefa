@@ -64,4 +64,13 @@ class Validation
 		'alamat' => 'required',
 		'file' => 'uploaded[file]|max_size[file,2048]|is_image[file]'
 	];
+
+	public $oauthRegister = [
+		'username' => 'required',
+		'password' => 'required',
+		'scope' => 'required',
+		'client_id' => 'required',
+		'client_secret' => 'required',
+		'grant_types' => 'required'
+	];
 }

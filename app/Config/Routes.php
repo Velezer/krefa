@@ -72,6 +72,7 @@ $routes->resource('api/people', ['controller' => 'PeopleApi']);
 $routes->get('api/people/name/(:alpha)','PeopleApi::showByName');
 
 $routes->post('oauth2/login', 'Oauth2Controller::login');
+$routes->post('oauth2/register', 'Oauth2Controller::register');
 
 /*
  * --------------------------------------------------------------------
