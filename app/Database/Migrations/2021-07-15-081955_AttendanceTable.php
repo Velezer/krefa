@@ -21,7 +21,6 @@ class AttendanceTable extends Migration
 			], 'id_people'          => [
 				'type'           => 'VARCHAR',
 				'constraint'     => 20,
-				'unsigned'       => true,
 			], 'hadir_pada' => [
 				'type' => 'DATETIME',
 				'null' => true

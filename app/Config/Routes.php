@@ -35,24 +35,6 @@ $routes->setAutoRoute(true);
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 
-// Page 
-$routes->group('presensi', function($routes){
-	$routes->get("(:num)", 'Presensi::index/$1');
-});
-
-// $routes->get('presensi/(:num)', 'Presensi::index');
-
-
-$routes->group('peserta', function($routes){
-	$routes->get("register", 'PeopleApi::new');
-	$routes->get("edit", 'PeopleApi::edit');
-});
-
-$routes->group('events', function($routes){
-	$routes->get("register", 'EventsApi::new');
-	$routes->get("edit", 'EventsApi::edit');
-});
-
 
 // API
 // $routes->resource('api/attendance', ['controller' => 'AttendanceApi']); 
