@@ -18,22 +18,30 @@ class AttendanceModel extends Model
 	// protected $deletedField         = 'deleted_at';
 
 	public function showAll(){
-		return $this->db->table('attendance')
+		return $this
 		->select('*')
 		->join('events', 'attendance.id_events = events.id')
 		->join('people', 'attendance.id_people = people.id')
 		->get()->getResultArray();
 	}
+	public function findData($idEvents, $idPeople){
+		return $this
+		->select('*')
+		->where('id_events', $idEvents)
+		->where('id_people', $idPeople)
+		->get()->getResultArray();
+	}
 	public function findPeopleByEventsId($id){
-		return $this->db->table('attendance')
+		return $this
 		->select('*')
 		->where('id_events', $id)
-		// ->join('events', 'attendance.id_events = events.id')
 		->join('people', 'attendance.id_people = people.id')
+		->join('events', 'attendance.id_events = events.id')
 		->get()->getResultArray();
 	}
 	public function findEventsByPeopleId($id){
-		return $this->db->table('attendance')
+		return $this
+		// ->db->table('attendance')
 		->select('*')
 		->where('id_people', $id)
 		->join('events', 'attendance.id_events = events.id')

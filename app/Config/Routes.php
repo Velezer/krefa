@@ -44,8 +44,8 @@ $routes->group('api/attendance', function($routes){
 	$routes->put('update/(:segment)','AttendanceApi::update');
 	$routes->delete('delete/(:segment)','AttendanceApi::delete');
 	
-	$routes->get('events/(:segment)','AttendanceApi::showPeopleByEvents');
-	$routes->get('people/(:segment)','AttendanceApi::showEventsByPeople');
+	$routes->get('events/(:segment)','AttendanceApi::showPeopleByEvents/$1');
+	$routes->get('people/(:segment)','AttendanceApi::showEventsByPeople/$1');
 });
 
 $routes->resource('api/events', ['controller' => 'EventsApi']);

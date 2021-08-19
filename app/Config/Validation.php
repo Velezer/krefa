@@ -73,4 +73,9 @@ class Validation
 		'client_secret' => 'required',
 		'grant_types' => 'required'
 	];
+
+	public $hadir = [
+		'id_events' => 'required',
+		'id_people' => 'required',
+	];
 }
