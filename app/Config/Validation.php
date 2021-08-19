@@ -43,10 +43,10 @@ class Validation
 	//--------------------------------------------------------------------
 
 	public $insertEvent = [
-		'tema' => 'required',
 		'judul' => 'required',
 		'pembicara' => 'required',
-		'tempat' => 'required'
+		'tempat' => 'required',
+		'tanggal' => 'required|valid_date[Y-m-d]'
 	];
 
 	public $insertPeople = [

@@ -41,11 +41,10 @@ class AttendanceModel extends Model
 	}
 	public function findEventsByPeopleId($id){
 		return $this
-		// ->db->table('attendance')
 		->select('*')
 		->where('id_people', $id)
 		->join('events', 'attendance.id_events = events.id')
-		// ->join('people', 'attendance.id_people = people.id')
+		->join('people', 'attendance.id_people = people.id')
 		->get()->getResultArray();
 	}
 }
