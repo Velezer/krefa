@@ -16,9 +16,11 @@ class Oauth2Server
 
         $storage = new \OAuth2\Storage\Pdo(array('dsn' => $dsn, 'username' => $username, 'password' => $password));
 
-        $this->server = new \OAuth2\Server($storage);
+        $config = [
+            'access_lifetime' => 3600*24
+        ];
+        $this->server = new \OAuth2\Server($storage, $config);
         $this->server->addGrantType(new \OAuth2\GrantType\RefreshToken($storage));
         $this->server->addGrantType(new \OAuth2\GrantType\UserCredentials($storage));
     }
-
 }
