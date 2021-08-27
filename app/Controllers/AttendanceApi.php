@@ -64,15 +64,14 @@ class AttendanceApi extends ResourceController
     }
 
 
-    public function delete($id = null)
+    public function delete($idEvents = null,$idPeople = null)
     {
-        $data = $this->model->find($id);
-        if (!$data) {
-            return $this->failNotFound('id ' . $id . ' tidak ditemukan');
+        $data = $this->model->findData($idEvents,$idPeople);
+        $idAttendance=$data[0]['id'];
+        if (!$idAttendance) {
+            return $this->failNotFound('id tidak ditemukan');
         }
-
-        if ($this->model->delete($id)) {
-            $respond['data'] = $data;
+        if ($this->model->delete($idAttendance)) {
             $respond['status'] = 'success';
             $respond['message'] = 'Data berhasil dihapus';
             return $this->respondDeleted([$respond, $respond['message']]);

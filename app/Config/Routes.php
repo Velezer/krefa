@@ -41,8 +41,8 @@ $routes->setAutoRoute(true);
 $routes->group('api/attendance', function($routes){
 	$routes->get("", 'AttendanceApi::index');
 	$routes->post("hadir", 'AttendanceApi::create');
-	$routes->put('update/(:segment)','AttendanceApi::update');
-	$routes->delete('delete/(:segment)','AttendanceApi::delete');
+	$routes->put('(:segment)','AttendanceApi::update/$1');
+	$routes->delete('(:segment)/(:segment)','AttendanceApi::delete/$1/$2');
 	
 	$routes->get('events/(:segment)','AttendanceApi::showPeopleByEvents/$1');
 	$routes->get('people/(:segment)','AttendanceApi::showEventsByPeople/$1');
