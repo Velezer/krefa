@@ -99,19 +99,15 @@ class PeopleApi extends ResourceController
     }
 
 
-    public function showByName($name = null)
-    {
-        $data = $this->model->findByName($name);
-        if ($data) {
-            $respond['data'] = $data;
-            $respond['status'] = 'success';
-            return $this->respond($respond);
-        }
-        return $this->failNotFound('id ' . $name . ' tidak ditemukan');
-    }
+    // public function showByName($name = null)
+    // {
+    //     $data = $this->model->findByName($name);
+    //     if ($data) {
+    //         $respond['data'] = $data;
+    //         $respond['status'] = 'success';
+    //         return $this->respond($respond);
+    //     }
+    //     return $this->failNotFound('id ' . $name . ' tidak ditemukan');
+    // }
 
-    public function new()
-    {
-        return view('peserta/register');
-    }
 }

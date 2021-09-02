@@ -29,7 +29,10 @@ class PeopleTable extends Migration
 			],
 			'alamat' => [
 				'type' => 'TEXT',
-			]
+			],
+			'tahun_lahir' => [
+				'type' => 'DATE'
+			],
 		]);
 
 		$this->forge->addPrimaryKey('id');

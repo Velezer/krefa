@@ -8,7 +8,9 @@ class PeopleModel extends Model
 {
 	protected $table = 'people';
 	protected $primaryKey = 'id';
-	protected $allowedFields = ['id', 'foto', 'nama', 'whatsapp', 'alamat'];
+	protected $allowedFields = [
+		'id', 'foto', 'nama', 'whatsapp', 'alamat','tahun_lahir'
+	];
 
 	public function findByName($name)
 	{

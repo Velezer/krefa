@@ -9,18 +9,19 @@ class MySeeder extends Seeder
 	public function run()
 	{
 		$dataEvents = [
-		'judul' => 'From Darkness',
+		'judul' => static::faker()->theme,
 		'pembicara' => static::faker()->title .' '. static::faker()->name,
 		'tempat' => static::faker()->company,
 		'tanggal' => static::faker()->date(),
 		];
 
 		$dataPeople = [
-			'id' => '2312321',
+			'id' =>static::faker()->id,
 			'foto' => static::faker()->imageUrl(),
 			'nama' => static::faker()->name,
 			'whatsapp' => static::faker()->phoneNumber,
-			'alamat' => static::faker()->address
+			'alamat' => static::faker()->address,
+			'tahun_lahir'=>static::faker()->date(),
 		];
 
 		$dataExecution = [
