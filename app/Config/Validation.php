@@ -54,7 +54,8 @@ class Validation
 		'nama' => 'required',
 		'whatsapp' => 'required|max_length[16]|min_length[9]',
 		'alamat' => 'required',
-		'file' => 'uploaded[file]|max_size[file,2048]|is_image[file]'
+		'file' => 'uploaded[file]|max_size[file,2048]|is_image[file]',
+		'tanggal_lahir' => 'required|valid_date[Y-m-d]'
 	];
 
 	public $updatePeople = [
@@ -62,7 +63,8 @@ class Validation
 		'nama' => 'required',
 		'whatsapp' => 'required|max_length[16]|min_length[9]',
 		'alamat' => 'required',
-		'file' => 'uploaded[file]|max_size[file,2048]|is_image[file]'
+		'file' => 'uploaded[file]|max_size[file,2048]|is_image[file]',
+		'tanggal_lahir' => 'required|valid_date[Y-m-d]'
 	];
 
 	public $oauthRegister = [

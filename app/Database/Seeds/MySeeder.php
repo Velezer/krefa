@@ -21,7 +21,7 @@ class MySeeder extends Seeder
 			'nama' => static::faker()->name,
 			'whatsapp' => static::faker()->phoneNumber,
 			'alamat' => static::faker()->address,
-			'tahun_lahir' => static::faker()->date(),
+			'tanggal_lahir' => static::faker()->date(),
 		];
 
 		$dataExecution = [

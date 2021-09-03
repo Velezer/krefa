@@ -32,7 +32,7 @@ class PeopleTable extends Migration
 			'alamat' => [
 				'type' => 'TEXT',
 			],
-			'tahun_lahir' => [
+			'tanggal_lahir' => [
 				'type' => 'DATE'
 			],
 		]);
