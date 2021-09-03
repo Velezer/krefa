@@ -17,13 +17,13 @@ class AttendanceModel extends Model
 	protected $updatedField         = 'updated_at';
 	// protected $deletedField         = 'deleted_at';
 
-	public function showAll(){
-		return $this
-		->select('*')
-		->join('events', 'attendance.id_events = events.id')
-		->join('people', 'attendance.id_people = people.id')
-		->get()->getResultArray();
-	}
+	// public function showAll(){
+	// 	return $this
+	// 	->select('*')
+	// 	->join('events', 'attendance.id_events = events.id')
+	// 	->join('people', 'attendance.id_people = people.id')
+	// 	->get()->getResultArray();
+	// }
 	public function findData($idEvents, $idPeople){
 		return $this
 		->select('*')

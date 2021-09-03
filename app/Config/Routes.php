@@ -39,7 +39,7 @@ $routes->setAutoRoute(true);
 // API
 // $routes->resource('api/attendance', ['controller' => 'AttendanceApi']); 
 $routes->group('api/attendance', function($routes){
-	$routes->get("", 'AttendanceApi::index');
+	// $routes->get("", 'AttendanceApi::index');
 	$routes->post("hadir", 'AttendanceApi::create');
 	$routes->put('(:segment)','AttendanceApi::update/$1');
 	$routes->delete('(:segment)/(:segment)','AttendanceApi::delete/$1/$2');

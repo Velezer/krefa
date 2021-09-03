@@ -9,19 +9,19 @@ class MySeeder extends Seeder
 	public function run()
 	{
 		$dataEvents = [
-		'judul' => static::faker()->theme,
-		'pembicara' => static::faker()->title .' '. static::faker()->name,
-		'tempat' => static::faker()->company,
-		'tanggal' => static::faker()->date(),
+			'judul' => static::faker()->words(2,true),
+			'pembicara' => static::faker()->title . ' ' . static::faker()->name,
+			'tempat' => static::faker()->company,
+			'tanggal' => static::faker()->date(),
 		];
 
 		$dataPeople = [
-			'id' =>static::faker()->id,
+			'id' => 1,
 			'foto' => static::faker()->imageUrl(),
 			'nama' => static::faker()->name,
 			'whatsapp' => static::faker()->phoneNumber,
 			'alamat' => static::faker()->address,
-			'tahun_lahir'=>static::faker()->date(),
+			'tahun_lahir' => static::faker()->date(),
 		];
 
 		$dataExecution = [
@@ -29,8 +29,28 @@ class MySeeder extends Seeder
 			'id_people' => 1
 		];
 
+
+
 		$this->db->table('people')->insert($dataPeople);
 		$this->db->table('events')->insert($dataEvents);
 		$this->db->table('attendance')->insert($dataExecution);
+
+
+
+		$dataOauthUser = [
+			'username' => 'krefa',
+			'password' => sha1('krefa'),
+			'scope' => 'app',
+		];
+
+		$dataOauthClient = [
+			'client_id' => 'krefa',
+			'client_secret' => 'krefa',
+			'scope' => 'app',
+			'grant_types' => 'password',
+		];
+
+		$this->db->table('oauth_users')->insert($dataOauthUser);
+		$this->db->table('oauth_clients')->insert($dataOauthClient);
 	}
 }

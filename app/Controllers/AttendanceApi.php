@@ -9,16 +9,16 @@ class AttendanceApi extends ResourceController
     protected $modelName = 'App\Models\AttendanceModel';
     protected $format    = 'json';
 
-    public function index()
-    {
-        $data = $this->model->showAll();
+    // public function index()
+    // {
+    //     $data = $this->model->showAll();
 
-        if ($data || $data == []) {
-            $respond['data'] = $data;
-            $respond['status'] = 'success';
-            return $this->respond($respond);
-        }
-    }
+    //     if ($data || $data == []) {
+    //         $respond['data'] = $data;
+    //         $respond['status'] = 'success';
+    //         return $this->respond($respond);
+    //     }
+    // }
 
 
     public function create() // saya hadir
@@ -64,10 +64,10 @@ class AttendanceApi extends ResourceController
     }
 
 
-    public function delete($idEvents = null,$idPeople = null)
+    public function delete($idEvents = null, $idPeople = null)
     {
-        $data = $this->model->findData($idEvents,$idPeople);
-        $idAttendance=$data[0]['id'];
+        $data = $this->model->findData($idEvents, $idPeople);
+        $idAttendance = $data[0]['id'];
         if (!$idAttendance) {
             return $this->failNotFound('id tidak ditemukan');
         }
@@ -84,6 +84,10 @@ class AttendanceApi extends ResourceController
     {
         $data = $this->model->findPeopleByEventsId($id);
 
+        // foreach ($data as $d => $value) {
+        //     $value['hadir_pada'] = date('Y-m-d H:i:s', strtotime($value['hadir_pada']));
+        //     echo $value['hadir_pada'];
+        // }
         if ($data) {
             $respond['data'] = $data;
             $respond['status'] = 'success';

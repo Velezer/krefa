@@ -12,7 +12,7 @@ class OauthUserModel extends Model
 
 	protected $beforeInsert = ['beforeInsert'];
 
-	protected function beforeinsert($data)
+	protected function beforeInsert($data)
 	{
 		$data['data']['password'] = sha1($data['data']['password']);
 		return $data;

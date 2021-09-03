@@ -13,6 +13,8 @@ class PeopleTable extends Migration
 			'id' => [
 				'type' => 'VARCHAR',
 				'constraint' => 20,
+				'null' => false
+
 			],
 			'foto' => [
 				'type' => 'VARCHAR',

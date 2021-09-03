@@ -13,7 +13,8 @@ class AttendanceTable extends Migration
 				'type'           => 'INT',
 				'constraint'     => 11,
 				'unsigned'       => true,
-				'auto_increment' => true
+				'auto_increment' => true,
+
 			], 'id_events'          => [
 				'type'           => 'INT',
 				'constraint'     => 11,
@@ -23,16 +24,17 @@ class AttendanceTable extends Migration
 				'constraint'     => 20,
 			], 'hadir_pada' => [
 				'type' => 'DATETIME',
-				'null' => true
+				// 'null' => true
 			], 'updated_at' => [
 				'type' => 'DATETIME',
-				'null' => true
+				// 'null' => true
 			]
 		]);
 
-		$this->forge->addPrimaryKey('id');
+		// $this->forge->addPrimaryKey('id');
 		$this->forge->addForeignKey('id_events', 'events', 'id');
 		$this->forge->addForeignKey('id_people', 'people', 'id');
+		$this->forge->addPrimaryKey('id');
 		$this->forge->createTable('attendance', true);
 	}
 
