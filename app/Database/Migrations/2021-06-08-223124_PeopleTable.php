@@ -35,6 +35,11 @@ class PeopleTable extends Migration
 			'tanggal_lahir' => [
 				'type' => 'DATE'
 			],
+			'status'      => [
+				'type'           => 'ENUM',
+				'constraint'     => ['Kerja', 'Kuliah', 'SMP', 'SMA'],
+				'default'        => 'Kerja',
+			],
 		]);
 
 		$this->forge->addPrimaryKey('id');

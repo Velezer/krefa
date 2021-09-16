@@ -22,6 +22,7 @@ class MySeeder extends Seeder
 			'whatsapp' => static::faker()->phoneNumber,
 			'alamat' => static::faker()->address,
 			'tanggal_lahir' => static::faker()->date(),
+			'status' => 'kerja',
 		];
 
 		$dataExecution = [

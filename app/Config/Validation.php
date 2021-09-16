@@ -55,7 +55,8 @@ class Validation
 		'whatsapp' => 'required|max_length[16]|min_length[9]',
 		'alamat' => 'required',
 		'file' => 'uploaded[file]|max_size[file,2048]|is_image[file]',
-		'tanggal_lahir' => 'required|valid_date[Y-m-d]'
+		'tanggal_lahir' => 'required|valid_date[Y-m-d]',
+		'status' => 'required'
 	];
 
 	public $updatePeople = [
@@ -64,7 +65,8 @@ class Validation
 		'whatsapp' => 'required|max_length[16]|min_length[9]',
 		'alamat' => 'required',
 		'file' => 'uploaded[file]|max_size[file,2048]|is_image[file]',
-		'tanggal_lahir' => 'required|valid_date[Y-m-d]'
+		'tanggal_lahir' => 'required|valid_date[Y-m-d]',
+		'status' => 'required'
 	];
 
 	public $oauthRegister = [
