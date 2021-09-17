@@ -35,9 +35,14 @@ class PeopleTable extends Migration
 			'tanggal_lahir' => [
 				'type' => 'DATE'
 			],
-			'status'      => [
+			'status_sekolah'      => [
 				'type'           => 'ENUM',
-				'constraint'     => ['Kerja', 'Kuliah', 'SMP', 'SMA'],
+				'constraint'     => ['Kuliah', 'SMP', 'SMA'],
+				'default'        => 'Kuliah',
+			],
+			'status_kerja'      => [
+				'type'           => 'ENUM',
+				'constraint'     => ['Kerja', 'Tidak Kerja'],
 				'default'        => 'Kerja',
 			],
 		]);

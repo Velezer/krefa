@@ -9,7 +9,7 @@ class MySeeder extends Seeder
 	public function run()
 	{
 		$dataEvents = [
-			'judul' => static::faker()->words(2,true),
+			'judul' => static::faker()->words(2, true),
 			'pembicara' => static::faker()->title . ' ' . static::faker()->name,
 			'tempat' => static::faker()->company,
 			'tanggal' => static::faker()->date(),
@@ -22,7 +22,8 @@ class MySeeder extends Seeder
 			'whatsapp' => static::faker()->phoneNumber,
 			'alamat' => static::faker()->address,
 			'tanggal_lahir' => static::faker()->date(),
-			'status' => 'kerja',
+			'status_kerja' => 'Kerja',
+			'status_sekolah' => 'Kuliah',
 		];
 
 		$dataExecution = [

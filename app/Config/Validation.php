@@ -56,7 +56,8 @@ class Validation
 		'alamat' => 'required',
 		'file' => 'uploaded[file]|max_size[file,2048]|is_image[file]',
 		'tanggal_lahir' => 'required|valid_date[Y-m-d]',
-		'status' => 'required'
+		'status_sekolah' => 'required',
+		'status_kerja' => 'required'
 	];
 
 	public $updatePeople = [
@@ -66,7 +67,8 @@ class Validation
 		'alamat' => 'required',
 		'file' => 'uploaded[file]|max_size[file,2048]|is_image[file]',
 		'tanggal_lahir' => 'required|valid_date[Y-m-d]',
-		'status' => 'required'
+		'status_sekolah' => 'required',
+		'status_kerja' => 'required'
 	];
 
 	public $oauthRegister = [
