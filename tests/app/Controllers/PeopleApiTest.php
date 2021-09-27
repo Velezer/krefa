@@ -1,20 +1,19 @@
 <?php
 
-namespace App\Database;
+namespace App\Controllers;
 
 use CodeIgniter\Test\ControllerTestTrait;
 use CodeIgniter\Test\CIUnitTestCase;
 use Codeigniter\Test\FeatureTestTrait;
 use CodeIgniter\Test\DatabaseTestTrait;
+use CodeIgniter\Config\Factories;
 
 class PeopleApiTest extends CIUnitTestCase
 {
     use ControllerTestTrait, DatabaseTestTrait;
 
-    protected $migrate = false;
     // protected $refresh  = true;
-    // protected $seed     = 'TestSeeder';
-    protected $basePath = 'app/Daatabase';
+    protected $basePath = 'app/Database';
 
     public function setUp(): void
     {
@@ -23,8 +22,12 @@ class PeopleApiTest extends CIUnitTestCase
 
     public function testIndex()
     {
+
+        $model = new \App\Mocks\MockPeopleModel();
+        Factories::injectMock('models', 'App\Models\PeopleModel', $model);
+
         $result = $this->withURI('/api/people')
-            ->controller(\App\Controllers\PeopleApi::class)
+            ->controller(PeopleApi::class)
             ->execute('index');
 
         var_dump($result);
@@ -32,17 +35,20 @@ class PeopleApiTest extends CIUnitTestCase
         $this->assertTrue($result->isOK());
     }
 
-    public function testCreate()
-    {
-        $body = json_encode([
-            'id' => 'myid',
-            'nama' => 'bar'
-        ]);
+    // public function testCreate()
+    // {
+    //     $body = json_encode([
+    //         'id' => 'myid',
+    //         'nama' => 'bar'
+    //     ]);
 
-        $result = $this->withBody($body)
-            ->controller(\App\Controllers\PeopleApi::class)
-            ->execute('create');
+    //     $model = new \App\Mock\MockUserModel();
+    //     Factories::injectMock('models', 'App\Models\UserModel', $model);
 
-        $this->assertTrue($result->isOK());
-    }
+    //     $result = $this->withBody($body)
+    //         ->controller(\App\Controllers\PeopleApi::class)
+    //         ->execute('create');
+
+    //     $this->assertTrue($result->isOK());
+    // }
 }
